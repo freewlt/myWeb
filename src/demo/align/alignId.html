@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../../assets/js/jquery-1.4.2.min.js"></script>
+    <style>
+        #background {
+            position: absolute;
+            z-index: 998;
+            top: 0;
+            left: 0;
+            background: rgb(50, 50, 50);
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+        }
+
+        #content {
+            position: absolute;
+            width: 500px;
+            z-index: 999;
+            padding: 10px;
+            background: #fff;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div id="background"></div>
+<div id="content">
+    这里可以是随意的标签、随意的内容 - mming
+</div>
+<input id="btn" type="button" value="点我"/>
+<script>
+    $(function () {
+        function conPosition() {
+            var oBackground = document.getElementById("background");
+            var dw = $(document).width();
+            var dh = $(document).height();
+            oBackground.style.width = dw + 'px';
+            oBackground.style.height = dh + 'px';
+            var oContent = document.getElementById("content");
+            var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            var l = (document.documentElement.clientWidth - oContent.offsetWidth) / 2;
+            var t = ((document.documentElement.clientHeight - oContent.offsetHeight) / 2) + scrollTop;
+            oContent.style.left = l + 'px';
+            oContent.style.top = t + 'px';
+        }
+
+        $("#btn").click(function () {
+            $("#background, #content").show();
+            conPosition();
+        });
+        $("#background").on("touchmove", function (ev) {//禁止滑动
+            ev.preventDefault();
+        });
+        $("#background").click(function () {
+            $("#background, #content").hide();
+        });
+        //点击黑色背景隐藏弹出层，当然可以绑定在任意一个按钮上
+        $(window).resize(function () {
+            conPosition();
+        });
+        //$(window).scroll(function() {conPosition();});
+        //开启内容跟随垂直滚动条（水平滚动条需要处理的问题更多，暂时没有考虑）
+    });
+</script>
+</body>
+</html>

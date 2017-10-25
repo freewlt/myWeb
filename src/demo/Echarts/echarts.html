@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ECharts</title>
+    <script type="text/javascript" src="js/echarts.js"></script>
+    <style>
+        body {
+            min-width:1024px;
+        }
+
+        .box {
+            width: 48%;
+            margin:0 1% 1% 1%;
+            height: 21.5rem;
+            background: #ccc;
+            float: left;
+        }
+
+        .main, .mains {
+            float: left;
+            width: 50%;
+            height: 80%;
+        }
+
+        .chart-dis {
+            width: 100%;
+            float: left;
+            height: 20%;
+        }
+        .chart-dis a{
+            float: left;
+            padding-left:20px;
+            color: #000;
+            text-decoration: none;
+        }
+        .chart-dis a span{
+            color: #ada800;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div id="main" class="main"></div>
+    <div id="mains" class="mains"></div>
+    <div class="chart-dis">
+        <p class="fl">
+            <a href="javascript:;" class="fl pl_px20">客户数<br><span id="monthUserCount"
+                                                                   class="c-ada8">0人</span></a>
+            <a href="javascript:;" class="fl pl_px20">交易笔次<br><span id="monthTradeCount" class="c-ada8">0笔</span></a>
+            <a href="javascript:;" class="fl pl_px20">红包使用<br><span id="monthUsedCount" class="c-ada8">0个</span></a>
+            <a href="javascript:;" class="fl pl_px20">红包未使用<br><span id="monthNotUsedCount"
+                                                                     class="c-ada8">0个</span></a>
+        </p>
+    </div>
+</div>
+<div class="box"></div>
+<script type="text/javascript">
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('main'));
+
+    // 指定图表的配置项和数据
+    option = {
+        tooltip: {
+            trigger: 'item',
+            formatter: "{a} <br/>{b} : {c} ({d}%)"
+        },
+        title: {
+            text: '支付方式',
+            x: '95',
+            y: 'top',
+            textStyle: {
+                fontSize: 14,
+                color: "#797979"
+            }
+        },
+        legend: {
+            orient: 'vertical',
+            x: 'right',
+            y: 'center',
+            data: ['直接访问', '邮件营销', '联盟广告', '视频广告', '搜索引擎']
+        },
+        toolbox: {
+            show: true,
+        },
+        calculable: true,
+        series: [
+            {
+                name: '访问来源',
+                type: 'pie',
+                radius: ['40%', '60%'],
+                center : ['30%', '55%'],
+                itemStyle: {
+                    normal: {
+                        label: {
+                            show: false
+                        },
+                        labelLine: {
+                            show: false
+                        }
+                    },
+                    emphasis: {
+                        label: {
+                            show: true,
+                            position: 'center',
+                            textStyle: {
+                                fontSize: '30',
+                                fontWeight: 'bold'
+                            }
+                        }
+                    }
+                },
+                data: [
+                    {value: 335, name: '直接访问'},
+                    {value: 310, name: '邮件营销'},
+                    {value: 234, name: '联盟广告'},
+                    {value: 135, name: '视频广告'},
+                    {value: 1548, name: '搜索引擎'}
+                ]
+            }
+        ]
+    };
+
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+    var myChart = echarts.init(document.getElementById('mains'));
+    option = {
+        tooltip: {
+            trigger: 'item',
+            formatter: "{a} <br/>{b} : {c} ({d}%)"
+        },
+        title: {
+            text: '油品构成',
+            x: '95',
+            y: 'top',
+            textStyle: {
+                fontSize: 14,
+                color: "#797979"
+            }
+        },
+        legend: {
+            orient: 'vertical',
+            x: 'right',
+            y: 'center',
+            data: ['直接访问', '邮件营销', '联盟广告', '视频广告', '搜索引擎']
+        },
+        toolbox: {
+            show: true,
+        },
+        calculable: true,
+        series: [
+            {
+                name: '访问来源',
+                type: 'pie',
+                radius: ['40%', '60%'],
+                center : ['30%', '55%'],
+                itemStyle: {
+                    normal: {
+                        label: {
+                            show: false
+                        },
+                        labelLine: {
+                            show: false
+                        }
+                    },
+                    emphasis: {
+                        label: {
+                            show: true,
+                            position: 'center',
+                            textStyle: {
+                                fontSize: '30',
+                                fontWeight: 'bold'
+                            }
+                        }
+                    }
+                },
+                data: [
+                    {value: 335, name: '直接访问'},
+                    {value: 310, name: '邮件营销'},
+                    {value: 234, name: '联盟广告'},
+                    {value: 135, name: '视频广告'},
+                    {value: 1548, name: '搜索引擎'}
+                ]
+            }
+        ]
+    };
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+</script>
+</body>
+</html>

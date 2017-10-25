@@ -1,0 +1,10 @@
+
+  幸运大转盘
+
+               restaraunts:[],				//大转盘奖品名称
+               colors:[],					//大转盘奖品区块对应背景颜色
+               outsideRadius:192,			//大转盘外圆的半径
+               textRadius:155,				//大转盘奖品位置距离圆心的距离
+               insideRadius:68,			//大转盘内圆的半径
+               startAngle:0,				//开始角度
+               bRotate:false				//false:停止;ture:旋转

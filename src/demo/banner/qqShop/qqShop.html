@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
+    <title>仿QQ商城点击左右滚动jquery焦点图特效</title>
+    <meta name="keywords" content="jquery特效,JS代码,js特效代码大全,导航菜单代码,焦点幻灯片,企业网页设计欣赏"/>
+    <meta name="description" content="懒人建站为您提供-基于jquery特效，jquery弹出层效果，js特效代码大全，JS广告代码，导航菜单代码，下拉菜单代码和jquery焦点图片代码。"/>
+    <style type="text/css">
+        body {
+            font-size: 12px;
+            color: #222;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            background: #f0f0f0;
+        }
+
+        ul, li {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            border: 0;
+        }
+
+        /* 仿QQ商城点击左右滚动jquery焦点图特效插件 */
+        .focus {
+            width: 800px;
+            height: 280px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .focus ul {
+            height: 380px;
+            position: absolute;
+        }
+
+        .focus ul li {
+            float: left;
+            width: 800px;
+            height: 280px;
+            overflow: hidden;
+            position: relative;
+            background: #000;
+        }
+
+        .focus ul li div {
+            position: absolute;
+            overflow: hidden;
+        }
+
+        .focus .btnBg {
+            position: absolute;
+            width: 800px;
+            height: 20px;
+            left: 0;
+            bottom: 0;
+            background: #000;
+            display: none;
+        }
+
+        .focus .btn {
+            position: absolute;
+            width: 780px;
+            height: 23px;
+            padding: 0px 10px 0px 10px;
+            right: 0;
+            bottom: 6px;
+            text-align: right;
+        }
+
+        .focus .btn span {
+            display: inline-block;
+            _display: inline;
+            _zoom: 1;
+            width: 25px;
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            _font-size: 0;
+            margin-left: 5px;
+            cursor: pointer;
+            background: #fff;
+        }
+
+        .focus .btn span.on {
+            background: #fff;
+        }
+
+        .focus .preNext {
+            width: 45px;
+            height: 100px;
+            position: absolute;
+            top: 90px;
+            background: url(img/sprite.png) no-repeat 0 0;
+            cursor: pointer;
+        }
+
+        .focus .pre {
+            left: 0;
+        }
+
+        .focus .next {
+            right: 0;
+            background-position: right top;
+        }
+    </style>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/sl.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.focus("#focus001");
+            $.focus("#focus002");
+        });
+    </script>
+</head>
+
+<body>
+<h1>仿QQ商城点击左右滚动jquery焦点图特效插件</h1>
+<div class="focus" id="focus001">
+    <ul>
+        <li><a href="http://www.51xuediannao.com/" target="_blank"><img src="img/03.jpg" alt="jquery特效"/></a></li>
+        <li><a href="http://www.51xuediannao.com/" target="_blank"><img src="img/02.jpg" alt="懒人建站"/></a></li>
+        <li><a href="http://www.51xuediannao.com/" target="_blank"><img src="img/03.jpg" alt="仿QQ商城点击左右滚动jquery焦点图特效"/></a>
+        </li>
+    </ul>
+</div>
+
+<div class="focus" id="focus002">
+    <ul>
+        <li><a href="http://www.51xuediannao.com/" target="_blank"><img src="img/03.jpg" alt="懒人建站"/></a></li>
+        <li><a href="http://www.51xuediannao.com/" target="_blank"><img src="img/02.jpg" alt="懒人建站"/></a></li>
+        <li><a href="http://www.51xuediannao.com/" target="_blank"><img src="img/03.jpg" alt="懒人建站"/></a></li>
+    </ul>
+</div>
+
+<p>
+    54173BLOG作者写的这个仿QQ商城点击左右滚动jquery焦点图特效插件灰常给力，不过作者并没有给封装成点击左右滚动的jquery插件。我们在建设网站的时候一个页面如果多次调用这个jquery特效的时候，就麻烦了，懒人建站，使用的时候随手做了一下简单的jquery插件封装，分享给大家，希望能再你建设网站的时候给你带来方便。</p>
+<p>修改的几个地方：1、隐藏了半透明背景条，2、把那个小常条滑块读出了1234这些数字。 你不喜欢这样你可以修改样式和自己改动下jquery代码。</p>
+<p>调用方法：很简单，$.focus("#focus001"); 一些参数设置，可以修改js中的设置，源作者已经注释的很清楚了。</p>
+
+</body>
+</html>

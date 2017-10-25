@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上传图片</title>
+    <style>
+        .btn {
+            cursor: pointer;
+        }
+
+        .show-img {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+    <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="js/jquery.wallform.js"></script>
+    <script>
+        window.onload = function () {
+            /*上传图片*/
+            $('#photoimg').change(function () {
+
+                var windowsURL = window.URL || window.webkitURL
+                var domBox = $(".proPics");
+                var dom = $("#photoimg")[0];
+                for (var i = 0; dom.files[i]; i++) {
+                    domBox.append($('<a href="##"><img class="show-img" src="' + windowsURL.createObjectURL(dom.files[i]) + '" ></a>'))
+                }
+
+                $("#imageform").ajaxForm({
+                    target: '.proPics',
+                    beforeSubmit: function () {
+                    },
+                    success: function (data) {
+                    },
+                    error: function () {
+                    }
+                });
+            });
+
+        }
+
+
+    </script>
+</head>
+<body>
+<div class="proPics">
+    <a class="demo">
+        <form id="imageform" method="post" enctype="multipart/form-data" action="upload.php">
+            <div id="up_btn" class="btn">
+                <input id="photoimg" type="file" multiple="multiple" accept="image/*" name="photoimg">
+            </div>
+        </form>
+        <div id="preview"></div>
+    </a>
+</div>
+</body>
+</html>

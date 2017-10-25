@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>带缩略图jQuery幻灯片相册代码</title>
+<link rel="stylesheet" type="text/css" href="css/zzsc.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/slide.js"></script>
+</head>
+
+<body style="text-align:center">
+
+<div style="HEIGHT: 560px; PADDING-TOP: 20px" class="wrap picshow">
+	<!--大图轮换区-->
+	<div id="picarea">
+		<div style="MARGIN: 0px auto; WIDTH: 774px; HEIGHT: 436px; OVERFLOW: hidden">
+			<div style="MARGIN: 0px auto; WIDTH: 774px; HEIGHT: 436px; OVERFLOW: hidden" id="bigpicarea">
+				<p class="bigbtnPrev"><span id="big_play_prev"></span></p>
+				<div id="image_xixi-01" class="image">
+					<a href="http://www.16sucai.com/" target="_blank">
+					<img alt="" src="images/42766101.jpg" width="772" height="434"></a>
+					<div class="word">
+						<h3>舞动青春</h3>
+					</div>
+				</div>
+				<div id="image_xixi-02" class="image">
+					<a href="http://www.16sucai.com/" target="_blank">
+					<img alt="" src="images/42813100.jpg" width="772" height="434"></a>
+					<div class="word">
+						<h3>台球厅的生活</h3>
+					</div>
+				</div>
+				<div id="image_xixi-03" class="image">
+					<a href="http://www.16sucai.com/" target="_blank">
+					<img alt="" src="images/42813102.jpg" width="772" height="434"></a>
+					<div class="word">
+						<h3>采访进行中</h3>
+					</div>
+				</div>
+				<div id="image_xixi-04" class="image">
+					<a href="http://www.16sucai.com/" target="_blank">
+					<img alt="" src="images/42813139.jpg" width="772" height="434"></a>
+					<div class="word">
+						<h3>美女代言人</h3>
+					</div>
+				</div>
+				<div id="image_xixi-05" class="image">
+					<a href="http://www.16sucai.com/" target="_blank">
+					<img alt="" src="images/42766145.jpg" width="772" height="434"></a>
+					<div class="word">
+						<h3>红色经典</h3>
+					</div>
+				</div>
+				<div id="image_xixi-06" class="image">
+					<a href="http://www.16sucai.com/" target="_blank">
+					<img alt="" src="images/42766146.jpg" width="772" height="434"></a>
+					<div class="word">
+						<h3>回眸</h3>
+					</div>
+				</div>
+				<div id="image_xixi-07" class="image">
+					<a href="http://www.16sucai.com/" target="_blank">
+					<img alt="" src="images/42766159.jpg" width="772" height="434"></a>
+					<div class="word">
+						<h3>眩光的诱惑</h3>
+					</div>
+				</div>
+				<p class="bigbtnNext"><span id="big_play_next"></span></p>
+			</div>
+		</div>
+		<div id="smallpicarea">
+			<div id="thumbs">
+				<ul>
+					<li class="first btnPrev">
+					<img id="play_prev" src="images/left.png"></li>
+					<li class="slideshowItem"><a id="thumb_xixi-01" href="#">
+					<img src="images/42766316.jpg" width="90" height="60"></a>
+					</li>
+					<li class="slideshowItem"><a id="thumb_xixi-02" href="#">
+					<img src="images/42813171.jpg" width="90" height="60"></a>
+					</li>
+					<li class="slideshowItem"><a id="thumb_xixi-03" href="#">
+					<img src="images/42813178.jpg" width="90" height="60"></a>
+					</li>
+					<li class="slideshowItem"><a id="thumb_xixi-04" href="#">
+					<img src="images/42813186.jpg" width="90" height="60"></a>
+					</li>
+					<li class="slideshowItem"><a id="thumb_xixi-05" href="#">
+					<img src="images/42766362.jpg" width="90" height="60"></a>
+					</li>
+					<li class="slideshowItem"><a id="thumb_xixi-06" href="#">
+					<img src="images/42766274.jpg" width="90" height="60"></a>
+					</li>
+					<li class="last_img slideshowItem">
+					<a id="thumb_xixi-07" href="#">
+					<img src="images/42766298.jpg" width="90" height="60"></a>
+					</li>
+					<li class="last btnNext">
+					<img id="play_next" src="images/right.png"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script>
+var target = ["xixi-01","xixi-02","xixi-03","xixi-04","xixi-05","xixi-06","xixi-07"];
+</script>
+</div>
+</body>
+
+</html>

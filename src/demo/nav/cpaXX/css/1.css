@@ -1,0 +1,22 @@
+.progress {
+    width: 94%;
+    height: 14px;
+    overflow: initial !important;
+    margin-left: -2%;
+    background: #d6d6d6;
+}
+
+.progress-bar {
+    background-color: #f70007;
+    clear: both;
+    float: left;
+    margin-top: -20px;
+}
+
+.status-active .march {
+    background: url("../images/list/march.png") no-repeat;
+}
+.status-active a {
+    background: #f70007;
+}
+

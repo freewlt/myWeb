@@ -1,0 +1,25 @@
+
+ particles.js
+
+    一个用于创建粒子的轻量级JavaScript库。
+
+    加载particle.js并配置粒子：的index.html
+
+         < div  id = “ particle-js ” > </ div >
+
+        < script  src = “ particles.js ” > </ script >
+
+    app.js
+
+        1. 这是直接调用json文件里面的数据使用这种方法：
+
+         /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+         particlesJS.load('particles-js', 'assets/particles.json', function() {
+           console.log('callback - particles.js config loaded');
+         });
+
+         2. 本例子中是直接把json数据 写入到function中。
+
+
+
+ 摘自  https://github.com/VincentGarreau/particles.js/

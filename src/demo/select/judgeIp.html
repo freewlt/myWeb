@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery-1.11.1.js"></script>
+</head>
+<body>
+请输入IP地址：<input type="text" id="ip">
+<input type="button" onclick="checkIP()" value="验证">
+</body>
+
+<script language="javascript">
+    function checkIP() {
+        obj = $("#ip").val()
+//ip地址
+        var exp = /^(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$/;
+        var reg = obj.match(exp);
+        if (reg == null) {
+            alert("IP地址不合法！");
+        }
+        else {
+            alert("IP地址合法！");
+        }
+    }
+</script>
+
+</html>

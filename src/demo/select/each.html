@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title></title>
+</head>
+<body>
+<button>点我知道我是data谁,不过点了我之后我会改名字哦</button>
+<div class="ss">
+    <div data="我是一">each我里面的data值</div>
+    <div data="我是二">each我里面的data值</div>
+    <div data="我是三">each我里面的data值</div>
+    <div data="我是四">each我里面的data值</div>
+    <div data="我是五">each我里面的data值</div>
+</div>
+<script>
+    var i = 0;
+    $("button").click(function () {
+        $(".ss div").each(function () {
+            i++;
+            alert($(this).attr("data"))
+            $(this).attr("data", "我变成小" + i);
+        })
+        i = 0;
+        $("button").text("我只能改一次名字，再点我就知道我是谁了")
+    });
+
+</script>
+</body>
+</html>

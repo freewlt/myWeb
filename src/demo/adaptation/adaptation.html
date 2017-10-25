@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../../assets/js/jquery-1.4.2.min.js"></script>
+
+</head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>test</title>
+<style type="text/css">
+    /*重置*/
+    body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+        margin: 0;
+        padding: 0;
+    }
+
+    body, button, input, select, textarea {
+        font: 12px/1.5 tahoma, arial, simsun, sans-serif;
+    }
+
+    body {
+        background-color: #fff;
+        color: #333;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 100%;
+    }
+
+    address, cite, dfn, em, var {
+        font-style: normal;
+    }
+
+    code, kbd, pre, samp {
+        font-family: courier new, courier, monospace;
+    }
+
+    small {
+        font-size: 12px;
+    }
+
+    ul, ol {
+        list-style: none;
+    }
+
+    a {
+        color: #333;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    sup {
+        vertical-align: text-top;
+    }
+
+    sub {
+        vertical-align: text-bottom;
+    }
+
+    legend {
+        color: #000;
+    }
+
+    fieldset, img {
+        border: 0;
+    }
+
+    button, input, select, textarea {
+        font-size: 100%;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    caption, th {
+        text-align: left;
+    }
+
+    /*浮动*/
+    .left {
+        float: left;
+    }
+
+    .right {
+        float: right;
+    }
+
+    .clearfix:after {
+        visibility: hidden;
+        display: block;
+        clear: both;
+        height: 0;
+        font-size: 0;
+        content: ".";
+    }
+
+    .clearfix {
+        zoom: 1;
+    }
+
+    .mod {
+        margin-bottom: 10px;
+    }
+
+    html, body {
+        height: 100%;
+    }
+
+    .qhLayout {
+        height: 100%;
+        background: #f0f;
+        color: #fff;
+        font-size:100px;
+    }
+
+    .qhLayoutWidth {
+        width: 1000px;
+        overflow-x: auto;
+        background-color: #f00;
+    }
+</style>
+<script>
+    $(function () {
+        var resizeListener = function () {
+            $(window).one("resize", function () {
+                if ($(".qhLayout").width() < 1000) {
+                    var layoutWidth = $(".qhLayout").width();
+                    $(".qhLayout").addClass("qhLayoutWidth");
+                } else {
+                    var layoutWidth = $(".qhLayout").width();
+                    $(".qhLayout").removeClass("qhLayoutWidth");
+                }
+
+                setTimeout(resizeListener, 100);
+            });
+        }
+        resizeListener();
+    })
+</script>
+</head>
+
+<body>
+<div class="qhLayout" style="border: 1px solid #ddd;">
+    大于1000换颜色。
+</div>
+</body>
+</html>

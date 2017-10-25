@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/idangerous.swiper.css">
+    <meta name="viewport" content="width=device-width">
+    <style>
+        body {
+            position: relative;
+            width: 100%;
+            background: url("images/account.png") no-repeat;
+            margin: 0;
+        }
+        .preloader.visible {
+            top: 0;
+            opacity: 1;
+        }
+        .preloader {
+            position: absolute;
+            left: 0;
+            top: -100px;
+            z-index: 0;
+            color: #fff;
+            text-align: center;
+            line-height: 100px;
+            height: 100px;
+            width: 100%;
+            opacity: 0;
+            font-size: 25px;
+            -webkit-transition: 300ms;
+            -moz-transition: 300ms;
+            -ms-transition: 300ms;
+            -o-transition: 300ms;
+            transition: 300ms;
+            background: rgba(0,0,0,0.1);
+        }
+
+
+        .red-slide {
+            height: 500px;
+            width: 100%;
+            background: #ffdde0;
+        }
+
+        .undefined-slide {
+            position: absolute;
+            top: 0;
+            background: #1fbf86;
+            height: 500px;
+            width: 100%;
+        }
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="preloader"> Loading...</div>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide red-slide">
+            <div class="title">Slide 1</div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/idangerous.swiper.min.js"></script>
+<script>
+    var holdPosition = 0;
+    var mySwiper = new Swiper('.swiper-container', {
+        slidesPerView: 'auto',
+        mode: 'vertical',
+        watchActiveIndex: true,
+        onTouchStart: function () {
+            holdPosition = 0;
+        },
+        onResistanceBefore: function (s, pos) {
+            holdPosition = pos;
+        },
+        onTouchEnd: function () {
+            if (holdPosition > 100) {
+                mySwiper.setWrapperTranslate(0, 100, 0)
+                mySwiper.params.onlyExternal = true
+                $('.preloader').addClass('visible');
+                loadNewSlides();
+            }
+        }
+    })
+    var slideNumber = 0;
+    function loadNewSlides() {
+        setTimeout(function () {
+            //Prepend new slide
+            var colors = ['red', 'blue'];
+            var color = colors[Math.floor(colors.length)];
+            mySwiper.prependSlide('<div class="title">老大这里写你的代码' + slideNumber + '</div>', 'swiper-slide ' + color + '-slide');
+            //Release interactions and set wrapper
+            mySwiper.setWrapperTranslate(0, 0, 0)
+            mySwiper.params.onlyExternal = false;
+            //Update active slide
+            mySwiper.updateActiveSlide(0)
+            //Hide loader
+            $('.preloader').removeClass('visible');
+            $(".red-slide").addClass('hide');
+        }, 1000)
+        slideNumber++;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<title>全选与反选</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<script language="javascript">
+// --列头全选框被单击---
+function ChkAllClick(sonName, cbAllId){
+    var arrSon = document.getElementsByName(sonName);
+ var cbAll = document.getElementById(cbAllId);
+ var tempState=cbAll.checked;
+ for(i=0;i<arrSon.length;i++) {
+  if(arrSon[i].checked!=tempState)
+           arrSon[i].click();
+ }
+}
+
+// --子项复选框被单击---
+function ChkSonClick(sonName, cbAllId) {
+ var arrSon = document.getElementsByName(sonName);
+ var cbAll = document.getElementById(cbAllId);
+ for(var i=0; i<arrSon.length; i++) {
+     if(!arrSon[i].checked) {
+     cbAll.checked = false;
+     return;
+     }
+ }
+ cbAll.checked = true;
+}
+
+// --反选被单击---
+function ChkOppClick(sonName){
+ var arrSon = document.getElementsByName(sonName);
+ for(i=0;i<arrSon.length;i++) {
+  arrSon[i].click();
+ }
+}
+</script>
+</head>
+
+<body>
+<form name="form1" method="post" action="">
+<table width="500" border="1">
+  <tr bgcolor="#FFFF66">
+    <td>
+      <INPUT name="chkAll" id="chkAll" title="全选" onClick="ChkAllClick('chkSon','chkAll')" type="checkbox" />全选</td>
+    <td align="center">复选框全选示例 </td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><INPUT name="chkSon" id="chkSon1" type="checkbox"  value='1' onclick="ChkSonClick('chkSon','chkAll')" />1</td>
+    <td> 作用： </td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><INPUT name="chkSon" id="chkSon2" type="checkbox"  value='2' onclick="ChkSonClick('chkSon','chkAll')" />2</td>
+    <td> a.单击列头复选框全选或全不选子项 </td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><INPUT name="chkSon" id="chkSon3" type="checkbox"  value='3' onclick="ChkSonClick('chkSon','chkAll')" />3</td>
+    <td> b.只要有一个子项没有选中，则取消列头的选中状态 </td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr>
+    <td><INPUT name="chkSon" id="chkSon9" type="checkbox"  value='9' onclick="ChkSonClick('chkSon','chkAll')" />9</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><INPUT name="chkSon" id="chkSon10" type="checkbox"  value='10' onclick="ChkSonClick('chkSon','chkAll')" />10</td>
+    <td>d.将复选框反过来选</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr bgcolor="#66FFFF">
+    <td><INPUT name="chkOpposite" id="chkOpposite" title="反选" onClick="ChkOppClick('chkSon')" type="checkbox" />反选</td>
+    <td align="center">反选示例</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</form>
+</body>
+</html>

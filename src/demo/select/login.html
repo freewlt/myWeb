@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function fd() {
+            var a = false, b = false;
+            //手机
+            var rega = /^1[0-9]{10}$/;
+            var phone = document.form1.phone.value;
+            if (rega.test(phone)) {
+                a = true;
+                var m1 = document.getElementById('phone');
+                m1.style.color = "green";
+            } else {
+                var m1 = document.getElementById('phone');
+                m1.style.color = "red";
+                a = false;
+                return;
+            }
+            //密码
+            //var regb=/[a-zA-Z0-9]+/   //匹配字母或者数字。
+            var regb = /^[a-z][0-9a-z]{6,10}$/   //字母开头，7-11位的字符串。
+            var pass_wd = document.form1.pass_wd.value;
+            if (regb.test(pass_wd)) {
+                a = true;
+                var m2 = document.getElementById('pass_wd');
+                m2.style.color = "green";
+            } else {
+                var m2 = document.getElementById('pass_wd');
+                m2.style.color = "red";
+                a = false;
+                return;
+            }
+            if (a && b) {
+                document.form1.submit();
+                window.open = "index.html";
+            }
+        }
+    </script>
+</head>
+<body>
+<form action="index.html" method="post" name="form1">
+    <input type="text" value="手机" name="phone" onfocus="if (value =='手机'){value =''}"
+           onblur="if (value ==''){value='手机'}"><span id="phone">请输入手机号</span>
+    <input placeholder="密码" type="password" name="pass_wd" onfocus="if (value =='密码'){value =''}"
+           onblur="if (value ==''){value='密码'}"><span id="pass_wd">请输入密码</span>
+    <input type="button" value="登录" onclick="fd();">
+</form>
+</body>
+</html>

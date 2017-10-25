@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/public.css" rel="stylesheet" type="text/css">
+    <link href="css/ec.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js"></script>
+    <script src="js/ec.js"></script>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+
+        // 指定图表的配置项和数据
+        var option = {
+            title: {
+                text: 'ECharts 入门示例'
+            },
+            tooltip: {},
+            legend: {
+                data:['销量']
+            },
+            xAxis: {
+                data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
+            },
+            yAxis: {},
+            series: [{
+                name: '销量',
+                type: 'bar',
+                data: [5, 20, 36, 10, 10, 20]
+            }]
+        };
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+</head>
+<body style="min-width: 1100px">
+<!--用油情况-->
+<div class="index-list">
+    <ul class="index-list-ul">
+        <li>
+            <p class="list-li-left"><img src="images/list/dollar.png"></p>
+            <p class="list-li-right">
+                <span class="li-right-price"><i>0.00</i><em>元</em></span>
+                <span>账户余额</span>
+                <span>充值</span>
+            </p>
+        </li>
+        <li>
+            <p class="list-li-left list-li-base"><img src="images/list/Toil.png"></p>
+            <p class="list-li-right">
+                <span class="li-right-price"><i>0.00</i><em>L</em></span>
+                <span>囤油管理</span>
+                <span>查看</span>
+            </p>
+        </li>
+        <li>
+            <p class="list-li-left"><img src="images/list/car.png"></p>
+            <p class="list-li-right">
+                <span class="li-right-price"><i>100</i><em>辆</em></span>
+                <span>车辆管理</span>
+                <span>查看</span>
+            </p>
+        </li>
+        <li>
+            <p class="list-li-left list-li-base"><img src="images/list/oil.png"></p>
+            <p class="list-li-right">
+                <span class="li-right-price"><i>500</i><em>L</em></span>
+                <span>总用油量</span>
+                <span>查看</span>
+            </p>
+        </li>
+    </ul>
+</div>
+<!--信息列表-->
+<div class="index-bg look-bg">
+    <!--canvas图形-->
+    <div class="index-bg-div index-bg-left">
+        <div class="looks-bg">
+            <div class="looks-bg-title">
+                <div class="Imanage-arg pull-left">
+                    <div class="Imanage-select">
+                        <select class="Imanage-style-input Imanage-style-select">
+                            <option>加油金额</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="Imanage-arg pull-right">
+                    <div class="Imanage-select Imanage-select-fr">
+                        <select class="Imanage-style-input Imanage-style-select">
+                            <option>全部车辆</option>
+                        </select>
+                    </div>
+                    <div class="Imanage-select Imanage-select-fr">
+                        <select class="Imanage-style-input Imanage-style-select">
+                            <option>近一年</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="looks-canvas">
+                <div id="main" style="width:100%;height:400px;"></div>
+            </div>
+        </div>
+
+    </div>
+    <!--进度统计-->
+    <div class="index-bg-div index-bg-right looks-bg">
+        <div class="looks-bg">
+            <div class="looks-bg-title">
+                <h3>返现级别</h3>
+                <div class="looks-bg-box">
+                    <p class="month-p">月累计充值金额：</p>
+                    <div class="axis">
+                        <ul class="axis-start status-active">
+                            <li>50万</li>
+                            <li>
+                                <p class="status">
+                                    <span class="Smedia"><i class="circle"></i></span>
+                                </p>
+                            </li>
+                            <li>返1%</li>
+                        </ul>
+                        <ul class="axis-then">
+                            <li class="active">100万</li>
+                            <li>
+                                <p class="status status-active">
+                                    <span class="march"></span>
+                                    <a><i style="width: 100%;"></i></a>
+                                <!--<div class="progress">-->
+                                    <!--<div class="progress-bar" role="progressbar" aria-valuenow="2" aria-valuemin="0"-->
+                                         <!--aria-valuemax="100" style="width:100%;">-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                </p>
+                            </li>
+                            <li>2%</li>
+                        </ul>
+                        <ul class="axis-then">
+                            <li>150万</li>
+                            <li>
+                                <p class="status">
+                                    <span></span>
+                                    <a><i></i></a>
+                                <!--<div class="progress">-->
+                                    <!--<div class="progress-bar" role="progressbar" aria-valuenow="2" aria-valuemin="0"-->
+                                         <!--aria-valuemax="100">-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                </p>
+                            </li>
+                            <li>3%</li>
+                        </ul>
+                        <ul class="axis-then">
+                            <li>200万</li>
+                            <li>
+                                <p class="status">
+                                    <span></span>
+                                    <a><i></i></a>
+                                <!--<div class="progress">-->
+                                    <!--<div class="progress-bar" role="progressbar" aria-valuenow="2" aria-valuemin="0"-->
+                                         <!--aria-valuemax="100">-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                </p>
+                            </li>
+                            <li>4%</li>
+                        </ul>
+                        <ul class="axis-end">
+                            <li>250万</li>
+                            <li>
+                                <p class="status">
+                                    <span></span>
+                                    <a><i></i></a>
+                                <!--<div class="progress">-->
+                                    <!--<div class="progress-bar" role="progressbar" aria-valuenow="2" aria-valuemin="0"-->
+                                         <!--aria-valuemax="100">-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                </p>
+                            </li>
+                            <li>5%</li>
+                        </ul>
+
+                    </div>
+                    <p class="month-price">公司已充值金额：<i>50</i>万<span class="send">送<i>10</i>张洗车券</span></p>
+                    <p class="month-price">总返利：<i>50</i>万<span class="send">还差<i>50</i>万享受<i class="active">1%</i>的返现优惠奥！</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--图片展示-->
+<div class="index-bg car-bg">
+    <div class="index-bg-div index-bg-left car-bg">
+        <img src="images/list/Icar.png">
+    </div>
+    <div class="index-bg-div index-bg-right car-bg">
+        <img src="images/list/Wcar.png">
+    </div>
+</div>
+<script type="text/javascript">
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('main'));
+
+    // 指定图表的配置项和数据
+    option = {
+//        title : {
+//            text: '某地区蒸发量和降水量',
+//            subtext: '纯属虚构'
+//        },
+        tooltip : {
+            trigger: 'axis'
+        },
+//        legend: {
+//            data:['蒸发量','降水量']
+//        },
+//        toolbox: {
+//            show : true,
+//            feature : {
+//                mark : {show: true},
+//                dataView : {show: true, readOnly: false},
+//                magicType : {show: true, type: ['line', 'bar']},
+//                restore : {show: true},
+//                saveAsImage : {show: true}
+//            }
+//        },
+        calculable : true,
+        xAxis : [
+            {
+                type : 'category',
+                data: ["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"]
+            }
+        ],
+        yAxis : [
+            {
+                type : 'value'
+            }
+        ],
+        series : [
+            {
+                name:'蒸发量',
+                type:'bar',
+                data:[2.0, 4.9, 7.0, 23.2, 95.6, 76.7, 15.6, 10.2, 32.6, 20.0, 6.4, 3.3],
+                markPoint : {
+                    data : [
+                        {type : 'max', name: '最大值',backgroundColor:'rgba(0,0,0,0)'},
+                        {type : 'min', name: '最小值'}
+                    ]
+                },
+            },
+        ]
+    };
+
+    //    option = {
+////        title: {
+////            text: 'ECharts 入门示例'
+////        },
+////        tooltip: {},
+////        legend: {
+////            data:['销量']
+////        },
+//        xAxis: {
+//            data: ["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"]
+//        },
+//        yAxis: {},
+//        series: [{
+//            name: '销量',
+//            type: 'bar',
+//            data: [2, 10, 86, 10, 10, 20,
+//                {
+//                value : 56,
+//                tooltip:{},             //自定义特殊tooltip，仅对该item有效，详见tooltip
+//                    normal: {
+//                        label: {
+//                            show: true,
+//                            areaStyle: {
+//                                color: 'blue'
+//                            }
+//                        }
+//                        //自定义特殊itemStyle，仅对该item有效，详见itemStyle
+//                 },
+//                36, 10, 10, 20, 20],
+//            markPoint : {
+//                data : [
+//                    {type : 'max', name: '最大值'},
+//                    {type : 'min', name: '最小值'}
+//                ]
+//            },
+//        }]
+//    };
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+</script>
+</body>
+</html>

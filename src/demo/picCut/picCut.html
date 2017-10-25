@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title></title>
+    <style>
+        html,body,div,p,a,ul,li,span,p,input,h3,h5,h4,h6,dd,dt,dl,table,tr,td,th{margin:0;padding: 0;font-family: "微软雅黑";font-size: 12px;}
+        select{-webkit-appearance: none;-moz-appearance: none;appearance:none;background:none;border:none;}
+        li{list-style: none;}
+        a{text-decoration:none;color: #666;font-family: "微软雅黑";}
+        img{border: none;}
+        .nav {clear: both;height: 70px;border-top:1px solid #ccc;padding-bottom: 10px;}
+        .nav ul{height: 80px;line-height: 25px; margin-left: 6%;min-width: 900px;width: 100%;}
+        .nav ul li{float: left;width:9%;font-size: 12px;position:relative;}
+        .nav ul li a{ display: block; height: 79px; text-align: center; width: 100%;line-height: 30px; overflow: hidden;}
+        .nav ul li img{  text-align: center; padding-top: 10px;margin-bottom: -10px; left:41%;  position: absolute;}
+        .nav ul li a span{display:block;margin-top:24%;}
+        .nav .active a{color: #f80505;background: #f4f4f4;}
+        .b{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="nav">
+    <ul >
+        <li>
+            <a href="javascript:void(0)" >
+                <img class="b"  src="images/icon/1.png" />
+                <img  class="a" src="images/icon/s1.png" />
+                <span>客服管理</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0)" >
+                <img class="b"  src="images/icon/10.png"/>
+                <img class="a"  src="images/icon/s10.png"/>
+                <span>微信管理</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<script>
+    $("li").click(function(){
+        var index = $(this).index();
+        $(this).addClass("active").siblings().removeClass("active");
+        $(this).find(".b").show().siblings(".a").hide();
+        $(this).siblings("li").find(".a").show().siblings(".b").hide();
+    });
+
+</script>
+</body>
+</html>

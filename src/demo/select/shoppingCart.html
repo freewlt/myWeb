@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <script src="js/jquery-1.11.1.js"></script>
+    <script>
+        window.onload = function () {
+            /*购物车*/
+            $('.btn_del').click(function () {
+                var num = parseInt($(this).next('.ipt_num').val());
+                if (num > 1) {
+                    $(this).next('.ipt_num').val(num - 1);
+                } else {
+                    $(this).next('.ipt_num').val(1);
+                }
+            });
+            $('.btn_add').click(function () {
+                var num = parseInt($(this).prev('.ipt_num').val());
+                $(this).prev('.ipt_num').val(num + 1);
+            });
+            //删除当前
+            $(".cofff").click(function () {
+                var index = $(this).index();
+                $(this).parent().parent().remove();
+            })
+        }
+        //全选
+        function check_all(obj, cName) {
+            var checkboxs = document.getElementsByName(cName);
+            for (var i = 0; i < checkboxs.length; i += 1) {
+                checkboxs[i].checked = obj.checked;
+                //删除选中的
+                $(".rem").click(function () {
+                    $(this).parent().parent().remove();
+                })
+            }
+
+        };
+
+    </script>
+</head>
+<body>
+<form>
+    <div class="list">
+        <table class="text_center" width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td><input type="checkbox" name="selProduct"></td>
+                <td>
+                    <button class="btn1 pointer btn_del coe54439" type="button">-</button>
+                    <input class="text_center ipt1 ipt_num" type="text" value="1">
+                    <button class="btn1 pointer btn_add coe54439" type="button">+</button>
+                </td>
+                <td><a class="cofff" href="##">删除</a></td>
+            </tr>
+        </table>
+        <table class="text_center" width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td><input type="checkbox" name="selProduct"></td>
+                <td>
+                    <button class="btn1 pointer btn_del coe54439" type="button">-</button>
+                    <input class="text_center ipt1 ipt_num" type="text" value="1">
+                    <button class="btn1 pointer btn_add coe54439" type="button">+</button>
+                </td>
+                <td><a class="cofff" href="##">删除</a></td>
+            </tr>
+        </table>
+
+    </div>
+    <div>
+        <div class="floright">
+            <button class="pointer" type="submit">结算</button>
+        </div>
+
+
+        <input id="selAll" onClick="check_all(this, 'selProduct')" type="checkbox"> <label
+            onClick="selAll.click()">全选</label>
+        <a class="rem" href="##">删除选中商品</a>
+        <div class="clear"></div>
+    </div>
+
+
+</form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>跳转菜单</title>
+    <script language="JavaScript">
+        function jump() {
+            location.href=document.myform.menu1.value;
+        }
+    </script>
+</head>
+<body>
+<form name="myform">
+    <select name="menu1" onChange="jump()">
+        <option>否</option>
+        <option value="../../page/index.html">是</option>
+    </select>
+</form>
+</body>
+</html>

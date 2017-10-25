@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        input[type=radio] {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background: none;
+            position: relative;
+            width: 14px;
+            height: 14px;
+            border-radius: 14px;
+            vertical-align: middle;
+            border: 1px solid #d9d9d9;
+            outline: none;
+        }
+        input[type=radio]:checked {
+            border-color: #32c2ba;
+        }
+
+        input[type=radio]:checked:after {
+            content: '';
+            position: absolute;
+            left: 3px;
+            top: 25%;
+            width: 6px;
+            height: 6px;
+            background: #32c2ba;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+<input type="radio" name="sex" class="">
+<input type="radio" name="sex" class="">
+<input type="radio" name="sex" class="">
+<input type="radio" name="sex" class="">
+</body>
+</html>

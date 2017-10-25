@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>数据统计</title>
+    <link rel="stylesheet" href="css/echarts.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <script>
+        (function (baseFontSize, fontscale) {
+            setRem();
+            window.addEventListener("orientationchange", setRem);
+            window.addEventListener("resize", setRem);
+            function setRem() {
+                var html = document.querySelector("html");
+                var width = html.getBoundingClientRect().width;
+                html.style.fontSize = width / 64 * 10 + "px";
+            }
+        })();
+        if (!window.Promise) {
+            document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"' + '>' + '<' + '/' + 'script>');
+        }
+    </script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="head">
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="http://www.baidu.com"><img src="img/swiper01.png"></a></div>
+                <div class="swiper-slide"><a href="http://www.baidu.com"><img src="img/swiper02.png"></a></div>
+                <div class="swiper-slide"><a href="http://www.baidu.com"><img src="img/swiper03.png"></a></div>
+                <div class="swiper-slide"><a href="http://www.baidu.com"><img src="img/swiper04.png"></a></div>
+                <div class="swiper-slide"><a href="http://www.baidu.com"><img src="img/swiper05.png"></a></div>
+                <div class="swiper-slide"><a href="http://www.baidu.com"><img src="img/swiper06.png"></a></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="count">1111</div>
+
+        <!-- Swiper JS -->
+        <script src="js/swiper.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                effect: 'coverflow',
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                /*autoplay: 2000,*/
+                autoplayDisableOnInteraction: false,
+                loop: true,
+                coverflow: {
+                    rotate: 0,
+                    stretch: 0,
+                    depth: 130,
+                    modifier: 5,
+                    slideShadows: false
+                }
+            });
+        </script>
+    </div>
+    <script type="text/javascript" src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
+    <script type="text/javascript">
+        if ('addEventListener' in document) {
+            window.addEventListener('load', function () {
+                FastClick.attach(document.body);
+            }, false);
+        }
+    </script>
+</div>
+</body>
+</html>

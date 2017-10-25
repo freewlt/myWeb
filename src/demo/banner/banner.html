@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .bannerIndex {
+            clear: both;
+            width: 100%;
+            position: relative;
+            background: transparent url(images/banner_bg371306.png) repeat center top;
+            -webkit-background-size: 100% 100%;
+            background-size: 100% 100%;
+        }
+
+        .bannerIndex .banner-in {
+            position: relative;
+            width: 1914px;
+            height: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .bannerIndex .banner-in img {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .bannerIndex .banner-in .Shuffling {
+            width: 1914px;
+            height: 500px;
+            overflow: hidden;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        .bannerIndex .banner-in .Shuffling .Shuffling-pic {
+            position: relative;
+            z-index: 10;
+            overflow: hidden;
+            height: 500px;
+            width: 8000px;
+        }
+
+        .bannerIndex .banner-in .Shuffling .Shuffling-pic li {
+            float: left;
+            display: inline;
+        }
+
+        .bannerIndex .banner-in .Shuffling .num {
+            text-align: center;
+            font-size: 0;
+            position: absolute;
+            height: 20px;
+            bottom: 11%;
+            left: 23%;
+            margin-right: -515px;
+            z-index: 999;
+        }
+
+        .bannerIndex .banner-in .Shuffling .num li {
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            background-color: dimgrey;
+            border-radius: 50%;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+
+        .bannerIndex .banner-in .Shuffling .num .on {
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+<div class="bannerIndex" id="wrapper">
+    <div class="banner-in" id="banner">
+        <div class="Shuffling">
+            <ul class="Shuffling-pic">
+                <li>
+                    <a href="" target="_blank">
+                        <img src="images/banner4.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="Jprocess.html" target="_blank">
+                        <img src="images/banner5.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="Cprofile.html" target="_blank">
+                        <img src="images/banner6.png">
+                    </a>
+                </li>
+            </ul>
+            <ul class="num">
+                <li class="on"></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        var clone = $(".Shuffling .Shuffling-pic li").first().clone();
+        $(".Shuffling .Shuffling-pic").append(clone);
+        var i = 0;
+        var size = $(".Shuffling .Shuffling-pic li").size();
+        //            定时自动轮播
+        var t = setInterval(function () {
+            moveR();
+        }, 2500);
+
+        //  鼠标滑过圆点
+        $(".Shuffling .num li").hover(function () {
+            clearInterval(t);
+            var index = $(this).index();
+            i = index;
+            $(".Shuffling .Shuffling-pic").stop().animate({left: -i * 1914}, 500);
+            $(this).addClass("on").siblings().removeClass("on");
+        });
+        //鼠标离开的时候动画效果
+        $(".Shuffling .num li").mouseleave(function () {
+
+            autoChangeAgain();
+        })
+
+//      鼠标离开轮播图恢复
+        function autoChangeAgain() {
+            t = setInterval(function () {
+                //调用变换处理函数
+                moveR();
+            }, 2000);
+        }
+
+//            轮播函数
+        function moveR() {
+            i++;
+            if (i == size) {
+                $(".Shuffling .Shuffling-pic").css({left: 0});
+                i = 1;
+            }
+            $(".Shuffling .Shuffling-pic").stop().animate({left: -i * 1914}, 500);
+            if (i == size - 1) {
+                $(".Shuffling .num li").eq(0).addClass("on").siblings().removeClass("on");
+            } else {
+                $(".Shuffling .num li").eq(i).addClass("on").siblings().removeClass("on");
+            }
+        }
+
+    })
+
+</script>
+</body>
+</html>

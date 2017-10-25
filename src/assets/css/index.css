@@ -1,0 +1,118 @@
+body {
+  background-color: #F4F4F4;
+  position: relative;
+  min-width: 700px;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  background: #16c9f6;
+}
+.header ul {
+  text-align: center;
+}
+.header ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 20px 0;
+}
+.header ul li a {
+  color: #fff;
+  font-size: 14px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.h3Title {
+  width: 100%;
+  font-size: 14px;
+  color: #000;
+  padding: 10px;
+  background: #f6f8fa;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin: 30px 0 14px;
+}
+.h4Title {
+  padding: 10px;
+  color: #0366d6;
+  margin: 10px 0 0;
+  font-size: 14px;
+}
+.content {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.content .spEffUl li {
+  display: inline-block;
+  vertical-align: top;
+  width: 21.8%;
+  margin: 1% 0 0 1%;
+  padding: 20px 15px;
+  text-align: center;
+  background-color: #FFF;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
+  position: relative;
+  transition: all 1s ease 0s;
+  overflow: hidden;
+}
+.content .spEffUl li .thumbnail {
+  font-size: 14px;
+}
+.content .spEffUl li .thumbnail img {
+  width: 100%;
+  height: 172px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transition: all 1s ease 0s;
+}
+.content .spEffUl li .thumbnail img:hover {
+  transform: scale(1.1);
+  opacity: .6;
+}
+.content .spEffUl li .cover-info {
+  clear: both;
+  padding: 6px 15px 10px;
+  overflow: hidden;
+}
+.content .spEffUl li .cover-info a {
+  color: #60BDE8;
+}
+.content .spEffUl li .cover-info a h4 {
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: keep-all;
+  white-space: nowrap;
+  display: block;
+  font-weight: bold;
+  line-height: 18px;
+  margin-top: 7px;
+  margin-bottom: 5px;
+}
+.content .spEffUl li .cover-info a:hover {
+  text-decoration: underline;
+}
+.content .spEffUl li .cover-info small {
+  height: 26px;
+  color: #838383;
+  padding-bottom: 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-align: left;
+}
+.content .pageSec,
+.content .pageThi {
+  display: none;
+}
+.pageBox {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}

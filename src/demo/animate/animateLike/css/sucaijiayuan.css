@@ -1,0 +1,78 @@
+/** OPTION ONE: My favorite. Uncomment the next sections to look at other variations and feel free to make your own! There are lots of concepts to explore with this setup **/
+
+/* I like this one best when the body is around width:440px } */
+html, body { height:100%; background:#704D50; margin:0; padding:0; overflow:hidden; }
+.container { position:relative; height: 0; padding-bottom: 100%; }
+.circle {
+  background:#FAE7C5;
+  position:absolute;
+  height:50%; width:50%;
+  border-radius:50%;
+  border:20px solid #704D50;
+  top:50%; left:50%;
+  margin-top:calc(-25% - 20px); margin-left:calc(-25% - 20px);
+  animation:spinscale 4s linear infinite;
+}
+.circle > .circle { 
+  width:90%; height:90%;
+  top:40%; left:40%;
+}
+@keyframes spinscale {
+  0% { transform:scale(.8) rotate(0deg); }
+  100% { transform:scale(.8) rotate(360deg); }
+}
+/** OPTION TWO: TAIL */
+/* This one is best when the body is at least 630px
+html, body { height:100%; background:#704D50; margin:0; padding:0; overflow:hidden; }
+.container { position:relative; height: 0; padding-bottom: 100%; }
+.circle {
+  background:#FAE7C5;
+  position:absolute;
+  height:50%; width:50%;
+  border-radius:50%;
+  border:20px solid #704D50;
+  top:50%; left:50%;
+  margin-top:calc(-25% - 20px); margin-left:calc(-25% - 20px);
+  transform:translate(50% 50%);
+}
+.circle > .circle { 
+  width:90%; height:90%;
+  top:40%; left:40%;
+  animation:spinscale 4s ease-in-out infinite;
+}
+@keyframes spinscale {
+  0%, 100% { transform:translate(-50%) scale(.7) rotate(-10deg); }
+  33% { transform:translate(-50%) scale(.7) rotate(30deg); }
+  66% { transform:translate(-50%) scale(.7) rotate(-60deg); }
+} 
+**/
+
+/** OPTION THREE: Circle to movements **/
+/* This one is best when the body is at least 630px
+html, body { height:100%; background:#704D50; margin:0; padding:0; overflow:hidden; }
+.container { position:relative; height: 0; padding-bottom: 100%; }
+body .circle {
+  transform:rotate(90deg);
+  left:50%;
+  top:30%;
+}
+.circle {
+  background:#FAE7C5;
+  position:absolute;
+  height:10%; width:10%;
+  border-radius:50%;
+  border:20px solid #704D50;
+  top:100%; left:31%;
+  margin-top:calc(-25% - 20px); margin-left:calc(-25% - 20px);
+  
+}
+.circle > .circle { 
+  width:100%; height:100%;
+  top:0%; left:0%;
+  transform:translate(100%, 100%) rotate(-30deg) scale(1);
+  animation:spinscale 4s ease-in-out infinite;
+}
+@keyframes spinscale {
+  33% { transform:scale(.8) rotate(-60deg); }
+}
+**/

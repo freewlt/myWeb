@@ -1,0 +1,106 @@
+html, body, div, p, a, ul, li, span, p, input, h2, h3, h5, h4, h6, dd, dt, dl, table, tr, td, th {
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+    font-size: 12px;
+}
+
+select {
+    font-family: "微软雅黑";
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    border: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #727272;
+    font-family: "微软雅黑";
+}
+
+img {
+    border: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+/*返回顶部*/
+@keyframes fadeInOut {
+    from {
+        bottom: 6%;
+        right: 10%;
+    }
+    to {
+        bottom: 8%;
+        right: 10%;
+    }
+}
+
+@-moz-keyframes fadeInOut /* Firefox */
+{
+    from {
+        bottom: 6%;
+        right: 10%;
+    }
+    to {
+        bottom: 8%;
+        right: 10%;
+    }
+}
+
+@-webkit-keyframes fadeInOut /* Safari 和 Chrome */
+{
+    from {
+        bottom: 6%;
+        right: 10%;
+    }
+    to {
+        bottom: 8%;
+        right: 10%;
+    }
+}
+
+@-o-keyframes fadeInOut /* Opera */
+{
+    from {
+        bottom: 6%;
+        right: 10%;
+    }
+    to {
+        bottom: 8%;
+        right: 10%;
+    }
+}
+
+.move {
+    position: fixed;
+    right: 10%;
+    bottom: 10%;
+    cursor: pointer;
+    background: url("../images/move.png") no-repeat;
+    width: 57px;
+    height: 57px;
+    display: none;
+    -webkit-animation-name: fadeInOut;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-direction: alternate;
+    opacity: .5;
+}
+
+.move:hover {
+    opacity: 1;
+}

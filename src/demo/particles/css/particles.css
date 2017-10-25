@@ -1,0 +1,14 @@
+#particles-js {
+  width: 100%;
+  height: 500px;
+  background-color: #b91f1c;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#particles-js canvas {
+  position: absolute;
+  top: 0;
+}

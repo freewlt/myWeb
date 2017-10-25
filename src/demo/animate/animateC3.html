@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--方法一：用了两个伪元素，一个向左延伸50%，一个向右延伸50%-->
+    <!--<style>-->
+    <!--.underline{-->
+    <!--width:200px;-->
+    <!--height:50px;-->
+    <!--background:#ddd;-->
+    <!--margin:20px;-->
+    <!--position:relative;-->
+    <!--}-->
+    <!--.underline:before, .underline:after{-->
+    <!--content:"";/*单引号双引号都可以，但必须是英文*/-->
+    <!--width:0;-->
+    <!--height:3px;/*下划线高度*/-->
+    <!--background:blue;/*下划线颜色*/-->
+    <!--position:absolute;-->
+    <!--top:100%;-->
+    <!--left:50%;-->
+    <!--transition:all.8s ;/*css动画效果，0.8秒完成*/-->
+    <!--}-->
+    <!--.underline:hover:before{/*动画效果是从中间向左延伸至50%的宽度*/-->
+    <!--left:0%;-->
+    <!--width:50%;-->
+    <!--}-->
+    <!--.underline:hover:after{/*动画效果是从中间向右延伸至50%的宽度*/-->
+    <!--left:50%;/*这句多余，主要是为了对照*/-->
+    <!--width:50%;-->
+    <!--}-->
+    <!--</style>-->
+
+    <!--方法二：只用一个延伸至100%-->
+    <style>
+
+        .underline {
+            width: 200px;
+            height: 50px;
+            background: #ddd;
+            margin: 20px;
+            position: relative;
+        }
+
+        .underline:after {
+            content: "";
+            width: 0;
+            height: 5px;
+            background: blue;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transition: all .8s;
+        }
+
+        .underline:hover:after {
+            left: 0%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="underline"></div>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.js"></script>
+    <script type="text/javascript" src="js/jquery.validate-zh.js"></script>
+    <script type="text/javascript" src="js/area.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.10.4.custom.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.datepicker-zh-TW.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#myForm").validate({
+                errorElement: 'span',
+                rules: {
+                    fname: {
+                        maxlength: 6,     //字符最大长度
+                        required: true    //必须填写
+                    },
+                    // lastname:{
+                    // 	minlength: 2,     //字符最小长度
+                    // 	required: true
+                    // },
+                    sex: {
+                        required: true
+                    },
+                    email: {
+                        required: true,
+                        email: true       //匹配邮箱地址格式
+                    },
+                    number: {
+                        required: true,
+                        number: true,
+                        max: 100,    //最大值
+                        min: 10      //最小值
+                    },
+                    phoneNum: {
+                        required: true,
+                        minlength: 11,
+                        maxlength: 11
+                    },
+                    password: {
+                        minlength: 5,
+                        required: true
+                    },
+                    rpassword: {
+                        minlength: 5,
+                        required: true,
+                        equalTo: "#password"    //匹配与xxxid元素相同的value
+                    },
+                },
+                messages: {
+                    firstname: {
+                        required: "这个必须填！！！！！！！！！！"
+                    },
+                    phoneNum: {
+                        minlength: "请输入正确的手机号码！",
+                        maxlength: "请输入正确的手机号码！"
+                    }
+                }
+            });
+            //地区
+            area.init();
+            $("#province").change(function () {
+                $("#city").empty();
+                var pro = this.value;
+                area.fillData(area.getCity(pro), $("#city"));
+                var city = $("#city").val();
+                $("#county").empty();
+                area.fillData(area.getCounty(pro, city), $("#county"));
+            })
+            $("#city").change(function () {
+                $("#county").empty();
+                var pro = $("#province").val();
+                var city = this.value;
+                area.fillData(area.getCounty(pro, city), $("#county"));
+            });
+
+            //日期
+            $("#date").datepicker()
+            $(".input input").click(function () {
+                $(this).val("")
+            });
+
+            $('select').change(function () {
+                var value = $("select").find("option:selected").val();
+                if (value == '1') {
+                    $('#Cont_1').removeClass('hide');
+                    $('#Cont_2,#Cont_3').addClass('hide');
+                }
+                if (value == '2') {
+                    $('#Cont_2').removeClass('hide');
+                    $('#Cont_1,#Cont_3').addClass('hide');
+                }
+            });
+
+
+        })
+    </script>
+    <style>
+        form div {
+            clear: both;
+            list-style: none;
+            line-height: 40px;
+        }
+
+        label {
+            display: inline-block;
+            width: 160px;
+            text-align: right;
+        }
+
+        input, select {
+            margin-left: 20px;
+        }
+
+        #myForm div span {
+            display: inline-block;
+            color: #f00;
+            font-size: 12px;
+        }
+
+        .date {
+            background: #000;
+        }
+
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<select>
+    <option value="1">否</option>
+    <option value="2">是</option>
+</select>
+<div id='Cont_1'></div>
+<div id='Cont_2' class="hide">
+    <form id="myForm" method="get" action="">
+        <div>
+            <label for="firstname">姓名：</label>
+            <input type="text" id="firstname" name="fname">
+        </div>
+        <div>
+            <label for="">性别：</label>
+            <input type="radio" name="sex">男
+            <input type="radio" name="sex">女
+        </div>
+        <div>
+            <label for="phoneNum">手机：</label>
+            <input type="text" id="phoneNum" name="phoneNum">
+        </div>
+        <div>
+            <label for="">关键联系人电话：</label>
+            <input type="text" name="phoneNum">
+        </div>
+        <div>
+            <label for="email">邮箱：</label>
+            <input type="text" id="email" name="email">
+        </div>
+        <div>
+            <label for="">护照号：</label>
+            <input type="text">
+        </div>
+        <div>
+            <label>上传相关文件： </label>
+            <input type="file"></p>
+        </div>
+
+        <div>
+            <label for="">出生日期：</label>
+            <input type="text" id="date"/>
+            <div class="date"></div>
+        </div>
+        <div>
+            <label for="">地区：</label>
+            <select id="province" name="Province"></select>
+            <select id="city" name="City"></select><!--
+				      <select id="county" name="District"></select> -->
+        </div>
+        <div>
+            <label for="">职业：</label>
+            <input type="text">
+        </div>
+        <div>
+            <label for="">身高：</label>
+            <input type="text">
+        </div>
+        <div>
+            <label for="">体重：</label>
+            <input type="text">
+        </div>
+        <input class="submit" type="submit" value="注册"/>
+    </form>
+</div>
+</body>
+</html>

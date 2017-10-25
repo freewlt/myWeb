@@ -1,0 +1,413 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html,
+body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by it's height */
+    margin: 0 auto -0px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+    height: 60px;
+}
+#footer {
+    background-color: #f5f5f5;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+    #footer {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body{
+    background: url("../img/bodyBG.png") repeat-x left top #fff;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #333;
+}
+.container {
+    width: auto;
+    max-width: 680px;
+}
+.container .credit {
+    margin: 20px 0;
+}
+.my-navbar-head{
+    width:100%;
+}
+.my-main{
+   background-color: #f7f7f7;
+}
+#order-choose>.panel>.panel-body{
+   // height: 50px;
+}
+#order-choose>.panel>.panel-footer{
+    //height: 30px;
+}
+#order-choose .panel{
+    margin-bottom: 5px;
+}
+#price{
+    color: #d43f3a;
+}
+
+
+#foot{position:relative;margin:0 auto;width:1024px;height:auto;zoom:1}
+#foot .top{float:left;width:100%;height:180px;border-bottom:1px #e7e8e9 solid}
+#foot .top ul{float:left;width:100%;height:150px}
+#foot .top ul li{float:left;width:340px;height:150px;cursor:pointer}
+#foot .top ul li em{float:left;padding:10px 0;width:100%;height:30px;list-style:none;text-align:center}
+#foot .top ul li p{float:left;width:100%;height:45px;color:#333;text-align:center;font-size:22px;line-height:45px}
+#foot .top ul li b{float:left;width:100%;height:45px;color:#38f;text-align:center;font-weight:400;font-size:25px;line-height:45px}
+#foot .bot{float:left;margin-top:49px;width:100%;height:225px}
+#foot .bot .news{float:left;overflow:hidden;margin:0;width:504px;height:225px;color:#666}
+#foot .bot .news .hd{float:left;width:504px}
+#foot .bot .news .hd ul{float:left;width:504px;height:45px;line-height:45px}
+#foot .bot .news .hd ul li{float:left;width:75px;text-align:center;line-height:45px;cursor:pointer}
+#foot .bot .news .hd ul li.on{width:75px;color:#333;font-size:16px;line-height:40px}
+#foot .bot .news .bd ul li dl dd{float:left;width:504px}
+#foot .bot .news .bd ul li dl dd span{float:left;width:80px;text-align:center}
+#foot .bot .news .bd a{float:left;color:#666;text-indent:5px}
+#foot .bot .botMenu{float:left;width:520px;height:100px}
+#foot .bot .botMenu dl{float:left;width:130px;height:100px}
+#foot .bot .botMenu dl dt{float:left;width:100%;height:45px;color:#333;font-size:16px;line-height:40px}
+#foot .bot .botMenu dl dt a{color:#333}
+#foot .bot .botMenu dl dd{float:left;width:100%}
+#foot .bot .botMenu dl dd a{color:#666}
+.footFull{margin-top:50px;width:100%; height:auto;float:left; background:#fafbfc;}
+.footFull #foot{height:150px;}
+.footFull #foot .bot{margin-top:29px;}
+
+#foot .foot{position:absolute;bottom:0;padding:15px 0 0 0;width:100%;border-top:1px #e7e8e9 solid;text-align:center;line-height:20px}
+#foot .foot p{
+    color: #666;
+    font-size:12px;
+}
+#foot .foot a{
+    color: #666;
+    font-size:12px;
+}
+
+#my-scrollSpy #my-scrollSpy ul.nav-tabs{
+    width: 140px;
+    margin-top: 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+}
+#my-scrollSpy ul.nav-tabs li{
+    margin: 0;
+    border-top: 1px solid #ddd;
+}
+#my-scrollSpy ul.nav-tabs li:first-child{
+    border-top: none;
+}
+#my-scrollSpy ul.nav-tabs li a{
+    margin: 0;
+    padding: 8px 16px;
+    border-radius: 0;
+}
+#my-scrollSpy ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
+    color: #fff;
+    background: #0088cc;
+    border: 1px solid #0088cc;
+}
+#my-scrollSpy ul.nav-tabs li:first-child a{
+    border-radius: 4px 4px 0 0;
+}
+#my-scrollSpy ul.nav-tabs li:last-child a{
+    border-radius: 0 0 4px 4px;
+}
+#my-scrollSpy ul.nav-tabs.affix{
+    top: 30px; /* Set the top position of pinned element */
+}
+#my-scrollSpy div{
+    padding:0;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

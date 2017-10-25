@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="description" content="搜狐白社会popup样式的优化"/>
+    <meta name="description" content="张鑫旭web前端学习之css"/>
+    <meta name="keywords" content="张鑫旭,鑫空间-鑫生活,博客,web前端,css,优化,demo页面,学习,"/>
+    <meta name="author" content="张鑫旭,zhangxixnu"/>
+    <title>搜狐白社会popup对话框样式效果实现的优化</title>
+    <link rel="shortcut icon" href="http://www.zhangxinxu.com/zxx_ico.png"/>
+    <link rel="stylesheet" href="../css/common.css" type="text/css"/>
+    <style type="text/css">
+        .souhu_pop_a {
+            display: inline-block;
+            padding-left: 6px;
+            background: url(../image/bai_paopao.gif) no-repeat;
+        }
+
+        .souhu_pop_b {
+            display: inline-block;
+            background: url(../image/bai_paopao.gif) no-repeat top right;
+        }
+
+        .souhu_pop_c {
+            display: inline-block;
+            background: url(../image/bai_paopao.gif) no-repeat -6px bottom;
+        }
+
+        .souhu_pop_d {
+            display: inline-block;
+            padding: 8px 6px;
+            background: url(../image/bai_paopao.gif) no-repeat right bottom;
+        }
+
+        /*my version 1*/
+        .zxx_pop_a {
+            display: inline-block;
+            background: url(../image/zxx_paopao.gif) no-repeat right bottom;
+            padding-right: 4px;
+            margin-right: -4px;
+        }
+
+        .zxx_pop_b {
+            display: inline-block;
+            background: url(../image/zxx_paopao.gif) no-repeat -6px bottom;
+            padding-bottom: 4px;
+        }
+
+        .zxx_pop_c {
+            display: inline-block;
+            background: url(../image/zxx_paopao.gif) no-repeat top right;
+            padding-right: 4px;
+            margin-right: -4px;
+            position: relative;
+        }
+
+        .zxx_pop_d {
+            display: inline-block;
+            background: white url(../image/zxx_paopao.gif) no-repeat;
+            padding: 8px 0px 4px 18px;
+            left: -7px;
+            position: relative;
+        }
+
+        /*my version 2*/
+        .pop {
+            float: left;
+        }
+
+        .pop_top_a {
+            line-height: 15px;
+            background: url(../image/zxx_paopao_s.gif) no-repeat;
+            padding-left: 10px;
+            font-size: 12px;
+        }
+
+        .pop_top_b {
+            background: #f5f5f5 url(../image/zxx_paopao_s.gif) no-repeat top right;
+            padding-right: 6px;
+        }
+
+        .pop_top_c {
+            line-height: 6px;
+            background: #ffffff;
+            border-top: 1px solid #d2d2d2;
+            border-bottom: 5px solid #f9f9f9;
+        }
+
+        .pop_body_a {
+            margin-left: 6px;
+            background: #f5f5f5;
+            border-left: 1px solid #d3d3d3;
+            border-right: 1px solid #d3d3d3;
+        }
+
+        .pop_body_b {
+            background: #f5f5f5;
+            padding: 0 8px;
+            position: relative;
+            top: -3px;
+        }
+
+        .pop_bot_a {
+            line-height: 5px;
+            background: url(../image/zxx_paopao_s.gif) no-repeat left bottom;
+            font-size: 5px;
+        }
+
+        .pop_bot_b {
+            background: url(../image/zxx_paopao_s.gif) no-repeat right bottom;
+        }
+
+        .pop_bot_c {
+            margin: 0px 4px 0 10px;
+            line-height: 3px;
+            background: white;
+            border-bottom: 1px solid #d2d2d2;
+            border-top: 1px solid #f8f8f8;
+        }
+    </style>
+</head>
+
+<body>
+<div class="zxx_out_box">
+    <div class="zxx_in_box">
+        <div class="zxx_header">
+            <a href="http://www.zhangxinxu.com/">
+                <img class="l"
+                     src="http://www.zhangxinxu.com/wordpress/wp-content/themes/default/images/index_logo.gif"/>
+            </a>
+            <span class="zxx_author_time">by zhangxinxu 2009-09-10 17:12</span>
+        </div>
+        <h3 class="zxx_title">搜狐白社会popup样式效果实现的优化</h3>
+        <div class="zxx_main_con">
+            <div class="zxx_test_list">
+                <h3 class="mb10">使用原搜狐白社会对话框背景图片实现的效果</h3>
+                <span class="souhu_pop_a">
+                    <span class="souhu_pop_b">
+                        <span class="souhu_pop_c">
+                            <span class="souhu_pop_d">
+                                这是搜狐白社会使用的背景图片写出来的效果。
+                            </span>
+                        </span>
+                    </span>
+                </span>
+            </div>
+            <div class="zxx_test_list">
+                <h3 class="mb10">我对搜狐白社会对话框背景图片处理后实现的效果</h3>
+                <span class="zxx_pop_a">
+                    <span class="zxx_pop_b">
+                        <span class="zxx_pop_c">
+                            <span class="zxx_pop_d">
+                                这是搜狐白社会使用的背景处理后的图片写出来的效果。
+                            </span>
+                        </span>
+                    </span>
+                </span>
+            </div>
+            <div class="zxx_test_list">
+                <h3 class="mb10">我对搜狐白社会对话框背景图片进一步处理后实现的效果</h3>
+                <div class="pop">
+                    <div class="pop_top_a">
+                        <div class="pop_top_b">
+                            <div class="pop_top_c">&nbsp;</div>
+                        </div>
+                    </div>
+                    <div class="pop_body_a">
+                        <div class="pop_body_b">
+                            这是搜狐白社会使用的背景图片进一步处理后的写出来的效果。<br/>以下是第二行的内容！
+                        </div>
+                    </div>
+                    <div class="pop_bot_a">
+                        <div class="pop_bot_b">
+                            <div class="pop_bot_c">&nbsp;</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="zxx_footer">
+            &copy;<a href="http://www.zhangxinxu.com/">张鑫旭-鑫空间-鑫生活</a>
+            |
+            <a href="http://www.zhangxinxu.com/wordpress/?p=239">该篇相关文章</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

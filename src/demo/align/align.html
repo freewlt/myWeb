@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../../assets/js/jquery-1.4.2.min.js"></script>
+    <style>
+        .quickly {
+            z-index: 999;
+            display: none;
+            height: 370px;
+            width: 440px;
+            border: 1px solid #d9d9d9;
+            position: absolute;
+            left: 500px;
+            top: 100px;
+            background: #fff;
+            border-radius: 8px;
+            font-size: 18px;
+            font-family: "微软雅黑";
+            box-shadow: 0 0 5px 5px #efefef;
+            text-align: center;
+        }
+
+
+    </style>
+    <script language="JavaScript">
+        window.onload = function () {
+            $(".popup").click(function (e) {
+                if ($(".quickly").is(":hidden")) {
+                    $(".quickly").fadeIn();
+                    e ? e.stopPropagation() : event.cancelBubble = true;
+                } else {
+                    $(".quickly").fadeOut();
+                }
+            });
+            $(".quickly").click(function (e) {
+                e ? e.stopPropagation() : event.cancelBubble = false;
+            });
+            $(document).click(function () {
+                $(".quickly").fadeOut();
+            });
+            $(".cancelrig ").click(function () {
+                $(".quickly").hide();
+            });
+            $(".cancelleft").click(function () {
+                $(".quickly").hide();
+            });
+        }
+
+    </script>
+</head>
+<body>
+<input type="button" value="弹窗" class="popup">
+<div class="quickly">
+    <h3>未收到货反馈</h3>
+    <input type="text" class="first color" value="显示签收，但实际未收到"
+           onfocus="javascript:if(this.value=='显示签收，但实际未收到')this.value='';"
+           onBlur="javascript:if(this.value=='')this.value='显示签收，但实际未收到';">
+    <input type="text" class="first" value="未经我确认，派件员将快件放入小区自提柜"
+           onfocus="javascript:if(this.value=='未经我确认，派件员将快件放入小区自提柜')this.value='';"
+           onBlur="javascript:if(this.value=='')this.value='未经我确认，派件员将快件放入小区自提柜';">
+    <input type="textarea" class="second">
+    <input type="button" value="提交" class="cancellef">
+    <input type="button" value="取消" class=" cancelrig">
+</div>
+
+</body>
+</html>

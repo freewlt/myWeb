@@ -1,0 +1,42 @@
+{
+	"name": "featherlight",
+	"title": "Featherlight – ultra slim jQuery lightbox",
+	"description": "Featherlight is a very lightweight jQuery lightbox plugin. It's simple yet flexible, has minimal css and uses no inline css, everything is name-spaced, it's completely customizable via config object and offers image, ajax and iframe support out of the box. Featherlight weights less than 3.7kB",
+	"keywords": [
+		"lightbox",
+		"modal",
+		"dialog",
+		"slim",
+		"lightweight",
+		"minimal",
+		"fast",
+		"simple",
+		"html5",
+		"customizable",
+		"ui",
+		"image",
+		"jquery",
+		"ajax",
+		"fancy",
+		"popup",
+		"window"
+	],
+	"version": "0.1.7",
+	"author": {
+		"name": "Noël Raoul Bossart",
+		"url": "http://www.noelboss.com"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "https://raw.github.com/noelboss/featherlight/master/LICENSE"
+		}
+	],
+	"bugs": "https://github.com/noelboss/featherlight/issues",
+	"homepage": "http://noelboss.github.io/featherlight/",
+	"docs": "https://github.com/noelboss/featherlight/blob/master/README.md",
+	"download": "https://github.com/noelboss/featherlight/archive/master.zip",
+	"dependencies": {
+		"jquery": ">=1.7"
+	}
+}

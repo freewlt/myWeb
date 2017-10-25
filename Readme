@@ -1,0 +1,133 @@
+## demo 例子
+
+导航区
+### 下拉菜单                src/demo/nav/index.html
+### 返回顶部                src/demo/nav/returnTop.html
+### jquery纵向可伸缩下拉菜单src/demo/nav/dropDownVertical.html
+### jQuery横向下拉菜单导航  src/demo/nav/dropDownLevel.html
+### 图片替换                src/demo/picCut/picCut.html
+### 菜单展开收起颜色变色图片变换
+                            src/demo/nav/cpaXX/public.html
+### 导航三级菜单图标变化
+                            src/demo/nav/navThird/navThird.html
+
+banner轮播图
+### fade淡入淡出轮播图      src/demo/banner/fade.html
+### 轮播图                  src/demo/banner/banner.html
+### 仿QQ商城点击左右滚动jquery焦点图特效
+                            src/demo/banner/qqShop/demo.html
+### 响应式                  src/demo/banner/autoTouch/autoTouch.html
+### 易生活囤油左右触屏滚动demo
+                            src/demo/banner/scrollTouch/scrollTouch.html
+### 带缩略图jQuery幻灯片相册代码
+                            src/demo/banner/scrollThumbnail/scrollThumbnail.html
+### 幻灯片插件slippry
+                            src/demo/banner/scrollSlippry/scrollSlippry.html
+### 手机端触屏左右拖动
+                            src/demo/banner/dragTouch/dragTouch.html
+### 手机端旋转木马仿3d
+                            src/demo/banner/whirligig3D/whirligig3D.html
+### 文字无缝滚动效果代码（jQuery）
+                            src/demo/banner/marquee/marquee.html
+### 文字水平滚动            src/demo/banner/levelMarquee.html
+### 文字水平滚动            src/demo/banner/marquee/marquee.html
+### 页面向下滚屏翻页特效
+                            src/demo/banner/rollPage/rollPage.html
+### 移动端左右滑动插件      src/demo/banner/moveSlide/moveSlide.html
+### 图片轮播加动画特效      src/demo/banner/sliderPlugin/dark-room.html
+### 3图并列jquery焦点图代码DEMO演示
+                            src/demo/banner/sliderPointer/index.html
+
+选择区
+### Select下拉跳转页面      src/demo/select/skipSelect.html
+### 单选按钮                src/demo/select/radio.html
+### 复选框按钮              src/demo/select/checkbox.html
+### 重置select              src/demo/select/resetSelect.html
+### Select选择是否显示注册页面
+                            src/demo/select/registerSelect.html
+### 遍历例子                src/demo/select/each.html
+### 透明度变化              src/demo/select/opacity.html
+### 登录密码                src/demo/select/login.html
+### 购物车特效              src/demo/select/shoppingCart.html
+### 文字切换                src/demo/select/switchWord.html
+### 免费获取倒计时          src/demo/select/countDown.html
+### 全选反选                src/demo/select/allSelect.html
+### 全选反选全不选          src/demo/select/allSelectSec.html
+### 联动选择                src/demo/filterDemo/Order.html
+
+插件区
+
+//动画
+### 幸运大转盘              src/demo/luckyWheel/luckyWheel.html
+### jQuery点赞文字放大特效代码
+                            src/demo/animate/animateLike/dianZan.html
+### 图片放大                src/demo/animate/magnifyPic/magnifyPic.html
+### aos特效                 src/demo/animate/aos/aos.html
+### 伪元素怎么实现鼠标移入时下划线向两边展开的效果
+                            src/demo/animate/animateC3.html
+### 多种css3滚动下拉动画加载效果
+                            src/demo/animate/pullDownLoad/pullDownLoad.html
+### jQuery - animate()模拟加入购物车飞入效果
+                            src/demo/animate/CloudBallRolling/CloudBallRolling.html
+### js标签云球形滚动特效代码
+                            src/demo/animate/shoppingCar.html
+### 多种滚动条              src/demo/animate/scrollBar/scrollBar.html
+### 树形图                  src/demo/animate/tree/demo/cn/index.html
+### 搜索分类样式            src/demo/searchClassify/index.html
+### 天气空气情况            src/demo/weather/index.html
+### 粒子特效（带水波纹的）  src/demo/particles/particles.html
+
+//二维码生成
+### 二维码                  src/demo/code/barcode.html
+                            src/demo/code/qrcode.html
+
+//日期联动
+### 年月日选择 date         src/demo/date/datePicker/date.html
+### FullCalendar应用        src/demo/date/fullCalendar/cal_opt.html
+### LArea手机端地区选择插件 src/demo/date/LareaMaster/LareaMaster.html
+### LCalendar日期选择       src/demo/date/LCalendar/LCalendar.html
+### mobileScroll日期时间插件src/demo/date/LCalendar/LCalendar.html
+### 年月日三级联动          src/demo/date/YMDClass/YMDClass.html
+
+//分页
+### 页码切换 page           src/demo/paging/index.html
+
+//echarts
+### Echarts                 src/demo/Echarts/echarts.html
+
+//弹窗
+### align
+                            src/demo/align/alignId.html
+                            src/demo/align/alignIframe.html
+                            src/demo/align/align.html
+###多种轻量级框架           src/demo/align/alignType.html
+###轻量级jQuery对话框插件 jQuery.dialog.js
+                            src/demo/align/alignDialog/index.html
+
+### 上传图片                src/demo/update/updatePic.html
+
+//地图
+### 地图地理位置            src/demo/map/location.html
+### 百度地图API自定义地图   src/demo/map/map.html
+
+//自适应
+### 自适应                  src/demo/adaptation/adaptation.html
+
+//支付宝
+### 支付宝快捷收银台流程    src/demo/alipay/index.html
+### 仿支付宝输入密码        src/demo/alipayImitate/index.html
+
+//加载刷新
+### 下拉显示背景图片，刷新完跳转到新的页面
+                            src/demo/loadRefresh/refreshLoad/refreshLoad.html
+### dropLoad上拉刷新，下拉加载
+                            src/demo/loadRefresh/dropLoad/example/product-list.html
+### pullToRefresh上拉刷新，下拉加载
+                            src/demo/loadRefresh/pullToRefresh/index.html
+### 进度条加载              src/demo/loadRefresh/barLoad/index.html
+### 进度条加载iD控制的      src/demo/loadRefresh/barId/index.html
+
+
+
+
+#### 特效集锦    src/page/index.html

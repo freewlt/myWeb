@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0048)http://www.jq22.com/demo/jquery-huakuai20151208/ -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>手指滑动图片展示效果</title>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+<div class="page_guide_slider">
+
+    <div class="page_guide_balloon">
+        <div class="page_guide_title">
+            <div class="page_guide_title_text">主题名称</div>
+        </div>
+        <div class="page_guide_pointer">
+            <div class="page_guide_point"></div>
+        </div>
+        <div class="page_guide_bar">
+            <div class="page_guide_progress">
+                <div style="width: 29.8313%; background-color: rgb(131, 160, 165);"></div>
+                <div style="width: 35.0844%;"></div>
+                <div style="width: 35.0844%; background-color: rgb(131, 160, 165);"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page_guide_container" onmousedown="pageGuideMousedown(this,event)"
+         onmousemove="pageGuideMousemove(this,event)" onmouseup="pageGuideMouseup(this,event)"
+         onmouseout="pageGuideMouseout(this,event)" ontouchstart="pageGuideTouchstart(this,event)"
+         ontouchmove="pageGuideTouchmove(this,event)" ontouchend="pageGuideTouchend(this,event)">
+        <div class="page_guide_items" style="width: 3521.74px;">
+
+            <div id="3_1" class="page_guide_item">
+                <div class="page_guide_item_text">
+                    <div class="page_guide_item_title">智能客服</div>
+                    <div class="page_guide_item_intr">机器人托管、人工客服接管、机器人辅助; 智能的对话分配机制，灵活自如，效率翻倍，助您打造高效智能的公众号客户服务平台</div>
+                </div>
+                <div class="page_guide_item_image">
+                    <img img_src="images/loading.jpg" src="images/func_quiz.jpg">
+                    <img img_src="images/loading.jpg" src="images/func_worker.jpg">
+                    <img img_src="images/loading.jpg" src="images/func_chat.jpg">
+                    <img img_src="images/loading.jpg" src="images/func_diylog.jpg">
+                </div>
+            </div>
+
+            <div id="3_2" class="page_guide_item">
+                <div class="page_guide_item_text">
+                    <div class="page_guide_item_title">商家功能</div>
+                    <div class="page_guide_item_intr">微信商家的必备利器： 公众号主页、会员卡、微信商城、附近门店、V数据表单...</div>
+                </div>
+                <div class="page_guide_item_image">
+                    <img img_src="images/loading.jpg" src="images/func_actssm.jpg">
+                    <img img_src="images/loading.jpg" src="images/func_chat.jpg">
+                    <img img_src="images/loading.jpg" src="images/func_disc.jpg">
+                    <img img_src="images/loading.jpg" src="images/func_diylog.jpg">
+                    <img img_src="images/loading.jpg" src="images/func_egg.jpg">
+                </div>
+            </div>
+
+            <div id="3_4" class="page_guide_item">
+                <div class="page_guide_item_text">
+                    <div class="page_guide_item_title">推广活动</div>
+                    <div class="page_guide_item_intr">丰富多彩的有奖活动(7款)，更注重连续性、娱乐性和参与性，有效增强用户粘性</div>
+                </div>
+                <div class="page_guide_item_image">
+                    <img img_src="images/loading.jpg" src="images/func_egg.jpg">
+                    <img img_src="images/loading.jpg" src="images/func_diylog.jpg">
+                    <img img_src="images/loading.jpg" src="images/func_actssm.jpg">
+                    <img img_src="images/loading.jpg" src="images/func_disc.jpg">
+                    <img img_src="images/loading.jpg" src="images/func_quiz.jpg">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<script src="js/slider.js" type="text/javascript"></script>
+
+
+</body>
+</html>
