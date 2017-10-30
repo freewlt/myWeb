@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <script src="js/jquery-1.11.1.js"></script>
+    <script src="../validator/js/jquery-1.11.1.js"></script>
+    <style>
+        body {
+            text-align: center;
+        }
+        .box{
+            margin-top:7rem;
+        }
+    </style>
 </head>
 <body>
-请输入IP地址：<input type="text" id="ip">
-<input type="button" onclick="checkIP()" value="验证">
+<div class="box">
+    请输入IP地址：<input type="text" id="ip">
+    <input type="button" onclick="checkIP()" value="验证">
+</div>
 </body>
 
 <script language="javascript">

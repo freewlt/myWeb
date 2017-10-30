@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选项卡切换</title>
+    <script src="../dropDown/js/jquery-1.11.1.min.js"></script>
+    <style>
+        li {
+            list-style: none;
+            height: 30px;
+            width: 100px;
+            line-height: 30px;
+            text-align: center;
+            background: #ccc;
+            border: 1px solid #333;
+            cursor: pointer;
+        }
+
+        ul, .tablist {
+            float: left;
+        }
+
+        ul .active {
+            background: #0f0;
+        }
+
+        ul .active a {
+            color: #fff;
+        }
+
+        .tablist {
+            margin-left: 20px;
+        }
+
+        .tablist div {
+            background: #f0f;
+            height: 100px;
+            width: 600px;
+        }
+
+        .tablist .listsec, .tablist .listthi {
+            display: none;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            $(" li").click(function () {
+                var index = $(this).index();
+                $(this).addClass("active").siblings().removeClass("active");
+                $(".tablist .tablt").eq(index).show().siblings().hide();
+            })
+        }
+    </script>
+</head>
+<body>
+<ul>
+    <li class="active"><a>收入明细</a></li>
+    <li><a>支出明细</a></li>
+    <li><a>我的优惠券</a></li>
+</ul>
+<div class="tablist">
+    <div class="tablt listfir">
+        <p>充值<span>1000</span>元 <span class="time">2015-11-12</span></p>
+    </div>
+    <div class="tablt listsec">
+        <p>dg三个<span>三个</span>元 <span class="time">2015-11-12</span></p>
+    </div>
+    <div class="tablt listsec">
+        <p>dg色鬼个<span>三个</span>元 <span class="time">2015-11-12</span></p>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>实用的基于jQuery的竖向二级下拉滑动伸缩菜单丨芯晴网页特效丨CsrCode.Cn</title>
+    <meta http-equiv="content-type" content="text/html;charset=gb2312">
+    <!--[if lt IE 8]>
+    <style type="text/css">
+        li a{display:inline-block;}
+        li a{display:block;}
+    </style>
+    <![endif]-->
+    <script src="../dropDown/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+        function initMenu() {
+            $('.clic ul').hide();
+            $('.clic ul:first').show();
+            $('.clic li a').click(
+                function() {
+                    var checkElement = $(this).next();
+                    if((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+                        return false;
+                    }
+                    if((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+                        $('.clic ul:visible').slideUp('normal');
+                        checkElement.slideDown('normal');
+                        return false;
+                    }
+                }
+            );
+        }
+        $(document).ready(function() {initMenu();});
+    </script>
+    <style type="text/css">
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 0.9em;
+        }
+        p {
+            line-height: 1.5em;
+        }
+        ul#menu, ul#menu ul {
+            list-style-type:none;
+            margin: 0;
+            padding: 0;
+            width: 15em;
+        }
+        ul#menu a {
+            display: block;
+            text-decoration: none;
+        }
+        ul#menu li {
+            margin-top: 1px;
+        }
+        ul#menu li a {
+            background: #333;
+            color: #fff;
+            padding: 0.5em;
+        }
+        ul#menu li a:hover {
+            background: #000;
+        }
+        ul#menu li ul li a {
+            background: #ccc;
+            color: #000;
+            padding-left: 20px;
+        }
+        ul#menu li ul li a:hover {
+            background: #aaa;
+            border-left: 5px #000 solid;
+            padding-left: 15px;
+        }
+        .code {
+            border: 1px solid #ccc;
+            list-style-type: decimal-leading-zero;
+            padding: 5px;
+            margin: 0;
+        }
+        .code code {
+            display: block;
+            padding: 3px;
+            margin-bottom: 0;
+        }
+        .code li {
+            background: #ddd;
+            border: 1px solid #ccc;
+            margin: 0 0 2px 2.2em;
+        }
+        .indent1 {
+            padding-left: 1em;
+        }
+        .indent2 {
+            padding-left: 2em;
+        }
+    </style>
+</head>
+<body>
+<ul class="clic">
+    <li>
+        <a href="#">CsrCode.Cn</a>
+        <ul>
+            <li><a href="http://www.CsrCode.cn/">网页特效</a></li>
+            <li><a href="http://www.7caidy.com/">七彩影视</a></li>
+            <li><a href="http://www.33567.cn/">珊珊影视</a></li>
+            <li><a href="http://Changshi.CsrCode.Cn/">生活常识</a></li>
+            <li><a href="http://Links.CsrCode.Cn/">链接平台</a></li>
+            <li><a href="http://BBS.33567.cn/">外链论坛</a></li>
+            <li><a href="http://idc.csrcode.cn/">月付主机</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">网页特效①</a>
+        <ul>
+            <li><a href="http://www.CsrCode.cn/html/txdm/cddh/" title="">菜单导航特效</a></li>
+            <li><a href="http://www.CsrCode.cn/html/txdm/tcys/" title="">图层样式特效</a></li>
+            <li><a href="http://www.CsrCode.cn/html/txdm/ljwb/" title="">链接文本特效</a></li>
+            <li><a href="http://www.CsrCode.cn/html/txdm/txtx/" title="">图形图像特效</a></li>
+            <li><a href="http://www.CsrCode.cn/html/txdm/sbtx/" title="">鼠标特效代码</a></li>
+            <li><a href="http://www.CsrCode.cn/html/txdm/ymck/" title="">页面窗口特效</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">网页特效②</a>
+        <ul>
+            <li><a href="http://www.CsrCode.cn/html/txdm/wybj/" title="">网页背景特效</a></li>
+            <li><a href="http://www.CsrCode.cn/html/txdm/rqsj/" title="">日期时间特效</a></li>
+            <li><a href="http://www.CsrCode.cn/html/txdm/ymss/" title="">页面搜索特效</a></li>
+            <li><a href="http://www.CsrCode.cn/html/txdm/bgtx/" title="">表格表单特效</a></li>
+            <li><a href="http://www.CsrCode.cn/html/txdm/qtdm/" title="">其他网页特效</a></li>
+        </ul>
+    </li>
+</ul>
+</body>
+</html>

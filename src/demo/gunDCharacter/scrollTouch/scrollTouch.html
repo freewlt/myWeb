@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>触屏文字滑动</title>
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"
+          name="viewport" id="viewport"/>
+    <link rel="stylesheet" href="swiper-3.3.1.min.css">
+    <script src="rem.js"></script>
+    <script src="jquery-2.2.2.min.js"></script>
+    <script src="swiper-3.3.1.jquery.min.js"></script>
+    <style>
+        body {
+            font-size: 12px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .al-line {
+            width: 100%;
+            position: relative;
+            left: 0;
+            right: 0;
+            overflow: hidden;
+
+        }
+
+        .swiper-om1 {
+            margin-top: 1rem;
+        }
+
+        .swiper-om1 li {
+            width: 2rem;
+            height: .6rem;
+            line-height: .6rem;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            text-align: center;
+            list-style: none;
+            border: 1px solid #000;
+        }
+
+        .swiper-om2 li {
+            margin-top: .5rem;
+            width: 1.5rem;
+            height: .6rem;
+            line-height: .6rem;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            text-align: center;
+            list-style: none;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+<section class="al-line">
+    <div class="swiper-om1">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide">AAA</li>
+            <li class="swiper-slide">bbbb</li>
+            <li class="swiper-slide">ccc</li>
+            <li class="swiper-slide">97<sup>#</sup></li>
+            <li class="swiper-slide">97<sup>#</sup></li>
+            <li class="swiper-slide">95<sup>#</sup></li>
+            <li class="swiper-slide">95<sup>#</sup></li>
+            <li class="swiper-slide">95<sup>#</sup></li>
+        </ul>
+    </div>
+    <div style="clear: both;"></div>
+    <div class="swiper-om2">
+        <ul class="swiper-wrapper">
+            <li href="##" class="swiper-slide"><b>OL1</b></li>
+            <li href="##" class="swiper-slide"><b>OL2</b></li>
+            <li href="##" class="swiper-slide"><b>OL3</b></li>
+            <li href="##" class="swiper-slide"><b>OL4</b></li>
+            <li href="##" class="swiper-slide"><b>OL5</b></li>
+            <li href="##" class="swiper-slide"><b>OL6</b></li>
+            <li href="##" class="swiper-slide"><b>OL7</b></li>
+            <li href="##" class="swiper-slide"><b>OL8</b></li>
+        </ul>
+    </div>
+</section>
+<script>
+    var per1 = new Swiper('.swiper-om1', {
+        freeMode: true,
+        slidesPerView: "auto"
+    });
+    var per2 = new Swiper('.swiper-om2', {
+        freeMode: true,
+        slidesPerView: "auto"
+    });
+    per1.params.control = per2;//需要在per1初始化后，per1控制per2
+</script>
+
+</body>
+</html>
