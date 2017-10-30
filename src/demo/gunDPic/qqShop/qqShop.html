@@ -1,11 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
-    <title>·ÂQQÉÌ³Çµã»÷×óÓÒ¹ö¶¯jquery½¹µãÍ¼ÌØĞ§</title>
-    <meta name="keywords" content="jqueryÌØĞ§,JS´úÂë,jsÌØĞ§´úÂë´óÈ«,µ¼º½²Ëµ¥´úÂë,½¹µã»ÃµÆÆ¬,ÆóÒµÍøÒ³Éè¼ÆĞÀÉÍ"/>
-    <meta name="description" content="ÀÁÈË½¨Õ¾ÎªÄúÌá¹©-»ùÓÚjqueryÌØĞ§£¬jqueryµ¯³ö²ãĞ§¹û£¬jsÌØĞ§´úÂë´óÈ«£¬JS¹ã¸æ´úÂë£¬µ¼º½²Ëµ¥´úÂë£¬ÏÂÀ­²Ëµ¥´úÂëºÍjquery½¹µãÍ¼Æ¬´úÂë¡£"/>
+    <meta charset="UTF-8">
+    <title>ä»¿QQå•†åŸç‚¹å‡»å·¦å³æ»šåŠ¨jqueryç„¦ç‚¹å›¾ç‰¹æ•ˆ</title>
     <style type="text/css">
         body {
             font-size: 12px;
@@ -24,9 +21,14 @@
             border: 0;
         }
 
-        /* ·ÂQQÉÌ³Çµã»÷×óÓÒ¹ö¶¯jquery½¹µãÍ¼ÌØĞ§²å¼ş */
+        /* ä»¿QQå•†åŸç‚¹å‡»å·¦å³æ»šåŠ¨jqueryç„¦ç‚¹å›¾ç‰¹æ•ˆæ’ä»¶ */
+        h1 {
+           text-align: center;
+        }
+
         .focus {
-            width: 800px;
+            margin: 0 auto;
+            width: 600px;
             height: 280px;
             overflow: hidden;
             position: relative;
@@ -39,7 +41,7 @@
 
         .focus ul li {
             float: left;
-            width: 800px;
+            width: 600px;
             height: 280px;
             overflow: hidden;
             position: relative;
@@ -51,21 +53,11 @@
             overflow: hidden;
         }
 
-        .focus .btnBg {
-            position: absolute;
-            width: 800px;
-            height: 20px;
-            left: 0;
-            bottom: 0;
-            background: #000;
-            display: none;
-        }
-
         .focus .btn {
             position: absolute;
-            width: 780px;
+            width: 600px;
             height: 23px;
-            padding: 0px 10px 0px 10px;
+            padding: 0 10px 0 10px;
             right: 0;
             bottom: 6px;
             text-align: right;
@@ -94,7 +86,7 @@
             height: 100px;
             position: absolute;
             top: 90px;
-            background: url(img/sprite.png) no-repeat 0 0;
+            background: url(images/sprite.png) no-repeat 0 0;
             cursor: pointer;
         }
 
@@ -107,39 +99,35 @@
             background-position: right top;
         }
     </style>
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/sl.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $.focus("#focus001");
-            $.focus("#focus002");
-        });
-    </script>
 </head>
 
 <body>
-<h1>·ÂQQÉÌ³Çµã»÷×óÓÒ¹ö¶¯jquery½¹µãÍ¼ÌØĞ§²å¼ş</h1>
+<h1>ä»¿QQå•†åŸç‚¹å‡»å·¦å³æ»šåŠ¨jqueryç„¦ç‚¹å›¾ç‰¹æ•ˆæ’ä»¶</h1>
 <div class="focus" id="focus001">
     <ul>
-        <li><a href="http://www.51xuediannao.com/" target="_blank"><img src="img/03.jpg" alt="jqueryÌØĞ§"/></a></li>
-        <li><a href="http://www.51xuediannao.com/" target="_blank"><img src="img/02.jpg" alt="ÀÁÈË½¨Õ¾"/></a></li>
-        <li><a href="http://www.51xuediannao.com/" target="_blank"><img src="img/03.jpg" alt="·ÂQQÉÌ³Çµã»÷×óÓÒ¹ö¶¯jquery½¹µãÍ¼ÌØĞ§"/></a>
+        <li><a href="http://www.51xuediannao.com/" target="_blank"><img src="images/1.png"/></a></li>
+        <li><a href="http://www.51xuediannao.com/" target="_blank"><img src="images/2.png"/></a></li>
+        <li><a href="http://www.51xuediannao.com/" target="_blank"><img src="images/3.png"/></a>
         </li>
     </ul>
 </div>
 
 <div class="focus" id="focus002">
     <ul>
-        <li><a href="http://www.51xuediannao.com/" target="_blank"><img src="img/03.jpg" alt="ÀÁÈË½¨Õ¾"/></a></li>
-        <li><a href="http://www.51xuediannao.com/" target="_blank"><img src="img/02.jpg" alt="ÀÁÈË½¨Õ¾"/></a></li>
-        <li><a href="http://www.51xuediannao.com/" target="_blank"><img src="img/03.jpg" alt="ÀÁÈË½¨Õ¾"/></a></li>
+        <li><a href="http://www.51xuediannao.com/" target="_blank"><img src="images/1.png"/></a></li>
+        <li><a href="http://www.51xuediannao.com/" target="_blank"><img src="images/2.png"/></a></li>
+        <li><a href="http://www.51xuediannao.com/" target="_blank"><img src="images/3.png"/></a></li>
     </ul>
 </div>
 
-<p>
-    54173BLOG×÷ÕßĞ´µÄÕâ¸ö·ÂQQÉÌ³Çµã»÷×óÓÒ¹ö¶¯jquery½¹µãÍ¼ÌØĞ§²å¼ş»Ò³£¸øÁ¦£¬²»¹ı×÷Õß²¢Ã»ÓĞ¸ø·â×°³Éµã»÷×óÓÒ¹ö¶¯µÄjquery²å¼ş¡£ÎÒÃÇÔÚ½¨ÉèÍøÕ¾µÄÊ±ºòÒ»¸öÒ³ÃæÈç¹û¶à´Îµ÷ÓÃÕâ¸öjqueryÌØĞ§µÄÊ±ºò£¬¾ÍÂé·³ÁË£¬ÀÁÈË½¨Õ¾£¬Ê¹ÓÃµÄÊ±ºòËæÊÖ×öÁËÒ»ÏÂ¼òµ¥µÄjquery²å¼ş·â×°£¬·ÖÏí¸ø´ó¼Ò£¬Ï£ÍûÄÜÔÙÄã½¨ÉèÍøÕ¾µÄÊ±ºò¸øÄã´øÀ´·½±ã¡£</p>
-<p>ĞŞ¸ÄµÄ¼¸¸öµØ·½£º1¡¢Òş²ØÁË°ëÍ¸Ã÷±³¾°Ìõ£¬2¡¢°ÑÄÇ¸öĞ¡³£Ìõ»¬¿é¶Á³öÁË1234ÕâĞ©Êı×Ö¡£ Äã²»Ï²»¶ÕâÑùÄã¿ÉÒÔĞŞ¸ÄÑùÊ½ºÍ×Ô¼º¸Ä¶¯ÏÂjquery´úÂë¡£</p>
-<p>µ÷ÓÃ·½·¨£ººÜ¼òµ¥£¬$.focus("#focus001"); Ò»Ğ©²ÎÊıÉèÖÃ£¬¿ÉÒÔĞŞ¸ÄjsÖĞµÄÉèÖÃ£¬Ô´×÷ÕßÒÑ¾­×¢ÊÍµÄºÜÇå³şÁË¡£</p>
 
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/sl.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $.focus("#focus001");
+        $.focus("#focus002");
+    });
+</script>
 </body>
 </html>

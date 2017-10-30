@@ -1,119 +1,212 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>jQuery·Â¾©¶«ÉÌÆ·É¸Ñ¡µ¼º½Ğ§¹û</title>
-<link rel="stylesheet" type="text/css" href="css/lrtk.css" />
-<script type="text/javascript" src="js/jquery-1.3.1.js"></script>
-<script type="text/javascript">
-    $(function () {
-        //Ñ¡ÖĞfilterÏÂµÄËùÓĞa±êÇ©£¬ÎªÆäÌí¼Óhover·½·¨£¬¸Ã·½·¨ÓĞÁ½¸ö²ÎÊı£¬·Ö±ğÊÇÊó±êÒÆÉÏºÍÒÆ¿ªËùÖ´ĞĞµÄº¯Êı¡£
-        $("#filter a").hover(
-            function () {
-                $(this).addClass("seling");
-            },
-            function () {
-                $(this).removeClass("seling");
-            }
-        );
+    <meta charset="UTF-8">
+    <title>jQueryä»¿äº¬ä¸œå•†å“ç­›é€‰å¯¼èˆªæ•ˆæœ</title>
+    <link rel="stylesheet" type="text/css" href="css/lrtk.css"/>
+    <script type="text/javascript" src="js/jquery-1.3.1.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            //é€‰ä¸­filterä¸‹çš„æ‰€æœ‰aæ ‡ç­¾ï¼Œä¸ºå…¶æ·»åŠ hoveræ–¹æ³•ï¼Œè¯¥æ–¹æ³•æœ‰ä¸¤ä¸ªå‚æ•°ï¼Œåˆ†åˆ«æ˜¯é¼ æ ‡ç§»ä¸Šå’Œç§»å¼€æ‰€æ‰§è¡Œçš„å‡½æ•°ã€‚
+            $("#filter a").hover(
+                function () {
+                    $(this).addClass("seling");
+                },
+                function () {
+                    $(this).removeClass("seling");
+                }
+            );
 
 
-        //Ñ¡ÖĞfilterÏÂËùÓĞµÄdt±êÇ©£¬²¢ÇÒÎªdt±êÇ©ºóÃæµÄµÚÒ»¸ödd±êÇ©ÏÂµÄa±êÇ©Ìí¼ÓÑùÊ½seled¡£(¸ĞÌ¾jqueryµÄÇ¿´ó)
-        $("#filter dt+dd a").attr("class", "seled"); /*×¢Òâ£ºÕâ¶ùÓ¦¸ÃÊÇÉèÖÃ(attr)ÑùÊ½£¬¶ø²»ÊÇÌí¼ÓÑùÊ½(addClass)£¬
-                                                      ²»È»ºóÃæÍ¨¹ı$("#filter a[class='seled']")·ÃÎÊ²»µ½classÑùÊ½ÎªseledµÄa±êÇ©¡£*/       
+            //é€‰ä¸­filterä¸‹æ‰€æœ‰çš„dtæ ‡ç­¾ï¼Œå¹¶ä¸”ä¸ºdtæ ‡ç­¾åé¢çš„ç¬¬ä¸€ä¸ªddæ ‡ç­¾ä¸‹çš„aæ ‡ç­¾æ·»åŠ æ ·å¼seledã€‚(æ„Ÿå¹jqueryçš„å¼ºå¤§)
+            $("#filter dt+dd a").attr("class", "seled");
+            /*æ³¨æ„ï¼šè¿™å„¿åº”è¯¥æ˜¯è®¾ç½®(attr)æ ·å¼ï¼Œè€Œä¸æ˜¯æ·»åŠ æ ·å¼(addClass)ï¼Œ
+             ä¸ç„¶åé¢é€šè¿‡$("#filter a[class='seled']")è®¿é—®ä¸åˆ°classæ ·å¼ä¸ºseledçš„aæ ‡ç­¾ã€‚*/
 
-        //ÎªfilterÏÂµÄËùÓĞa±êÇ©Ìí¼Óµ¥»÷ÊÂ¼ş
-        $("#filter a").click(function () {
-            $(this).parents("dl").children("dd").each(function () {
-				//ÏÂÃæÈıÖÖ·½Ê½Ğ§¹ûÏàÍ¬£¨µÚÈıÖÖĞ´·¨µÄÄÚ²¿¾ÍÊÇµ÷ÓÃÁËfind()º¯Êı£¬ËùÒÔ£¬µÚ¶ş¡¢ÈıÖÖ·½·¨ÊÇµÈ¼ÛµÄ¡££©
-                //$(this).children("div").children("a").removeClass("seled");
-				//$(this).find("a").removeClass("seled");
-				$('a',this).removeClass("seled");
+            //ä¸ºfilterä¸‹çš„æ‰€æœ‰aæ ‡ç­¾æ·»åŠ å•å‡»äº‹ä»¶
+            $("#filter a").click(function () {
+                $(this).parents("dl").children("dd").each(function () {
+                    //ä¸‹é¢ä¸‰ç§æ–¹å¼æ•ˆæœç›¸åŒï¼ˆç¬¬ä¸‰ç§å†™æ³•çš„å†…éƒ¨å°±æ˜¯è°ƒç”¨äº†find()å‡½æ•°ï¼Œæ‰€ä»¥ï¼Œç¬¬äºŒã€ä¸‰ç§æ–¹æ³•æ˜¯ç­‰ä»·çš„ã€‚ï¼‰
+                    //$(this).children("div").children("a").removeClass("seled");
+                    //$(this).find("a").removeClass("seled");
+                    $('a', this).removeClass("seled");
+                });
+
+                $(this).attr("class", "seled");
+
+                alert(RetSelecteds()); //è¿”å›é€‰ä¸­ç»“æœ   å¼¹å‡º
             });
-
-            $(this).attr("class", "seled");
-
-            alert(RetSelecteds()); //·µ»ØÑ¡ÖĞ½á¹û   µ¯³ö
+            alert(RetSelecteds()); //è¿”å›é€‰ä¸­ç»“æœ   å¼¹å‡º
         });
-        alert(RetSelecteds()); //·µ»ØÑ¡ÖĞ½á¹û   µ¯³ö
-    });
 
-    function RetSelecteds() {
-        var result = "";
-        $("#filter a[class='seled']").each(function () {
-            result += $(this).html()+"\n";
-        });
-        return result;
-    }
-</script>
+        function RetSelecteds() {
+            var result = "";
+            $("#filter a[class='seled']").each(function () {
+                result += $(this).html() + "\n";
+            });
+            return result;
+        }
+    </script>
 </head>
 <body>
-<!-- ´úÂë ¿ªÊ¼ -->
-	<div id="filter">
-        <dl>
-            <dt>Æ·ÅÆ£º</dt>
-            <dd><div><a>È«²¿</a></div></dd>
-            <dd><div><a>»İÆÕ(hp)</a></div></dd>
-            <dd><div><a>ÁªÏë(Lenovo)</a></div></dd>
-            <dd><div><a>ÁªÏë(ThinkPad)</a></div></dd>
-            <dd><div><a>ºê»ù(acer)</a></div></dd>
-            <dd><div><a>»ªË¶</a></div></dd>
-            <dd><div><a>´÷¶û</a></div></dd>
-            <dd><div><a>ÈıĞÇ</a></div></dd>
-            <dd><div><a>Ë÷Äá</a></div></dd>
-            <dd><div><a>¶«Ö¥</a></div></dd>
-            <dd><div><a>Gateway</a></div></dd>
-            <dd><div><a>Î¢ĞÇ</a></div></dd>
-            <dd><div><a>º£¶û</a></div></dd>
-            <dd><div><a>Çå»ªÍ¬·½</a></div></dd>
-            <dd><div><a>¸»Ê¿Í¨</a></div></dd>
-            <dd><div><a>Æ»¹û(Apple)</a></div></dd>
-            <dd><div><a>ÉñÖÛ</a></div></dd>
-            <dd><div><a>·½Õı</a></div></dd>
-            <dd><div><a>ÓÅÑÅ</a></div></dd>
-        </dl>
-        <dl>
-            <dt>¼Û¸ñ£º</dt>
-            <dd><div><a>È«²¿</a></div></dd>
-            <dd><div><a>1000-2999</a></div></dd>
-            <dd><div><a>3000-3499</a></div></dd>
-            <dd><div><a>3500-3999</a></div></dd>
-            <dd><div><a>4000-4499</a></div></dd>
-            <dd><div><a>4500-4999</a></div></dd>
-            <dd><div><a>5000-5999</a></div></dd>
-            <dd><div><a>6000-6999</a></div></dd>
-            <dd><div><a>7000-9999</a></div></dd>
-            <dd><div><a>10000ÒÔÉÏ</a></div></dd>
-        </dl>
-        <dl>
-            <dt>³ß´ç£º</dt>
-            <dd><div><a>È«²¿</a></div></dd>
-            <dd><div><a>8.9Ó¢´ç¼°ÒÔÏÂ</a></div></dd>
-            <dd><div><a>11Ó¢´ç</a></div></dd>
-            <dd><div><a>12Ó¢´ç</a></div></dd>
-            <dd><div><a>13Ó¢´ç</a></div></dd>
-            <dd><div><a>14Ó¢´ç</a></div></dd>
-            <dd><div><a>15Ó¢´ç</a></div></dd>
-            <dd><div><a>16Ó¢´ç-17Ó¢´ç</a></div></dd>
-        </dl>
-        <dl>
-            <dt>Æ½Ì¨£º</dt>
-            <dd><div><a>È«²¿</a></div></dd>
-            <dd><div><a>AMD Brazos APUÆ½Ì¨</a></div></dd>
-            <dd><div><a>Intel Sandy BridgeÆ½Ì¨</a></div></dd>
-            <dd><div><a>IntelÆ½Ì¨</a></div></dd>
-            <dd><div><a>AMDÆ½Ì¨</a></div></dd>
-        </dl>
-        <dl>
-            <dt>ÏÔ¿¨£º</dt>
-            <dd><div><a>È«²¿</a></div></dd>
-            <dd><div><a>¶ÀÁ¢ÏÔ¿¨</a></div></dd>
-            <dd><div><a>¼¯³ÉÏÔ¿¨</a></div></dd>
-            <dd><div><a>ºËĞ¾ÏÔ¿¨</a></div></dd>            
-        </dl>
-    </div>
-    <div style="clear:both"></div>
-<!-- ´úÂë ½áÊø -->
+<!-- ä»£ç  å¼€å§‹ -->
+<div id="filter">
+    <dl>
+        <dt>å“ç‰Œï¼š</dt>
+        <dd>
+            <div><a>å…¨éƒ¨</a></div>
+        </dd>
+        <dd>
+            <div><a>æƒ æ™®(hp)</a></div>
+        </dd>
+        <dd>
+            <div><a>è”æƒ³(Lenovo)</a></div>
+        </dd>
+        <dd>
+            <div><a>è”æƒ³(ThinkPad)</a></div>
+        </dd>
+        <dd>
+            <div><a>å®åŸº(acer)</a></div>
+        </dd>
+        <dd>
+            <div><a>åç¡•</a></div>
+        </dd>
+        <dd>
+            <div><a>æˆ´å°”</a></div>
+        </dd>
+        <dd>
+            <div><a>ä¸‰æ˜Ÿ</a></div>
+        </dd>
+        <dd>
+            <div><a>ç´¢å°¼</a></div>
+        </dd>
+        <dd>
+            <div><a>ä¸œèŠ</a></div>
+        </dd>
+        <dd>
+            <div><a>Gateway</a></div>
+        </dd>
+        <dd>
+            <div><a>å¾®æ˜Ÿ</a></div>
+        </dd>
+        <dd>
+            <div><a>æµ·å°”</a></div>
+        </dd>
+        <dd>
+            <div><a>æ¸…ååŒæ–¹</a></div>
+        </dd>
+        <dd>
+            <div><a>å¯Œå£«é€š</a></div>
+        </dd>
+        <dd>
+            <div><a>è‹¹æœ(Apple)</a></div>
+        </dd>
+        <dd>
+            <div><a>ç¥èˆŸ</a></div>
+        </dd>
+        <dd>
+            <div><a>æ–¹æ­£</a></div>
+        </dd>
+        <dd>
+            <div><a>ä¼˜é›…</a></div>
+        </dd>
+    </dl>
+    <dl>
+        <dt>ä»·æ ¼ï¼š</dt>
+        <dd>
+            <div><a>å…¨éƒ¨</a></div>
+        </dd>
+        <dd>
+            <div><a>1000-2999</a></div>
+        </dd>
+        <dd>
+            <div><a>3000-3499</a></div>
+        </dd>
+        <dd>
+            <div><a>3500-3999</a></div>
+        </dd>
+        <dd>
+            <div><a>4000-4499</a></div>
+        </dd>
+        <dd>
+            <div><a>4500-4999</a></div>
+        </dd>
+        <dd>
+            <div><a>5000-5999</a></div>
+        </dd>
+        <dd>
+            <div><a>6000-6999</a></div>
+        </dd>
+        <dd>
+            <div><a>7000-9999</a></div>
+        </dd>
+        <dd>
+            <div><a>10000ä»¥ä¸Š</a></div>
+        </dd>
+    </dl>
+    <dl>
+        <dt>å°ºå¯¸ï¼š</dt>
+        <dd>
+            <div><a>å…¨éƒ¨</a></div>
+        </dd>
+        <dd>
+            <div><a>8.9è‹±å¯¸åŠä»¥ä¸‹</a></div>
+        </dd>
+        <dd>
+            <div><a>11è‹±å¯¸</a></div>
+        </dd>
+        <dd>
+            <div><a>12è‹±å¯¸</a></div>
+        </dd>
+        <dd>
+            <div><a>13è‹±å¯¸</a></div>
+        </dd>
+        <dd>
+            <div><a>14è‹±å¯¸</a></div>
+        </dd>
+        <dd>
+            <div><a>15è‹±å¯¸</a></div>
+        </dd>
+        <dd>
+            <div><a>16è‹±å¯¸-17è‹±å¯¸</a></div>
+        </dd>
+    </dl>
+    <dl>
+        <dt>å¹³å°ï¼š</dt>
+        <dd>
+            <div><a>å…¨éƒ¨</a></div>
+        </dd>
+        <dd>
+            <div><a>AMD Brazos APUå¹³å°</a></div>
+        </dd>
+        <dd>
+            <div><a>Intel Sandy Bridgeå¹³å°</a></div>
+        </dd>
+        <dd>
+            <div><a>Intelå¹³å°</a></div>
+        </dd>
+        <dd>
+            <div><a>AMDå¹³å°</a></div>
+        </dd>
+    </dl>
+    <dl>
+        <dt>æ˜¾å¡ï¼š</dt>
+        <dd>
+            <div><a>å…¨éƒ¨</a></div>
+        </dd>
+        <dd>
+            <div><a>ç‹¬ç«‹æ˜¾å¡</a></div>
+        </dd>
+        <dd>
+            <div><a>é›†æˆæ˜¾å¡</a></div>
+        </dd>
+        <dd>
+            <div><a>æ ¸èŠ¯æ˜¾å¡</a></div>
+        </dd>
+    </dl>
+</div>
+<div style="clear:both"></div>
+<!-- ä»£ç  ç»“æŸ -->
 
 </body>
 </html>

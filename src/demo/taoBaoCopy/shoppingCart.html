@@ -3,7 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>购物车</title>
-    <script src="js/jquery-1.11.1.js"></script>
+    <script src="../validator/js/jquery-1.11.1.js"></script>
+    <style>
+        .list {
+            width: 400px;
+            margin: 10rem auto;
+        }
+        .jieSuan{
+            margin: 1rem 0;
+        }
+    </style>
     <script>
         window.onload = function () {
             /*购物车*/
@@ -65,14 +74,9 @@
                 <td><a class="cofff" href="##">删除</a></td>
             </tr>
         </table>
-
-    </div>
-    <div>
-        <div class="floright">
+        <div class="jieSuan">
             <button class="pointer" type="submit">结算</button>
         </div>
-
-
         <input id="selAll" onClick="check_all(this, 'selProduct')" type="checkbox"> <label
             onClick="selAll.click()">全选</label>
         <a class="rem" href="##">删除选中商品</a>

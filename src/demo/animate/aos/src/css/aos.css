@@ -1,0 +1,1009 @@
+/*
+ * Default variables
+ */
+/**
+ * Duration
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='50'] [aos], [aos][aos][aos-duration='50'] {
+  transition-duration: 50ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='100'] [aos], [aos][aos][aos-duration='100'] {
+  transition-duration: 100ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='150'] [aos], [aos][aos][aos-duration='150'] {
+  transition-duration: 150ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='200'] [aos], [aos][aos][aos-duration='200'] {
+  transition-duration: 200ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='250'] [aos], [aos][aos][aos-duration='250'] {
+  transition-duration: 250ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='300'] [aos], [aos][aos][aos-duration='300'] {
+  transition-duration: 300ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='350'] [aos], [aos][aos][aos-duration='350'] {
+  transition-duration: 350ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='400'] [aos], [aos][aos][aos-duration='400'] {
+  transition-duration: 400ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='450'] [aos], [aos][aos][aos-duration='450'] {
+  transition-duration: 450ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='500'] [aos], [aos][aos][aos-duration='500'] {
+  transition-duration: 500ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='550'] [aos], [aos][aos][aos-duration='550'] {
+  transition-duration: 550ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='600'] [aos], [aos][aos][aos-duration='600'] {
+  transition-duration: 600ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='650'] [aos], [aos][aos][aos-duration='650'] {
+  transition-duration: 650ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='700'] [aos], [aos][aos][aos-duration='700'] {
+  transition-duration: 700ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='750'] [aos], [aos][aos][aos-duration='750'] {
+  transition-duration: 750ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='800'] [aos], [aos][aos][aos-duration='800'] {
+  transition-duration: 800ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='850'] [aos], [aos][aos][aos-duration='850'] {
+  transition-duration: 850ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='900'] [aos], [aos][aos][aos-duration='900'] {
+  transition-duration: 900ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='950'] [aos], [aos][aos][aos-duration='950'] {
+  transition-duration: 950ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='1000'] [aos], [aos][aos][aos-duration='1000'] {
+  transition-duration: 1000ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='1050'] [aos], [aos][aos][aos-duration='1050'] {
+  transition-duration: 1050ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='1100'] [aos], [aos][aos][aos-duration='1100'] {
+  transition-duration: 1100ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='1150'] [aos], [aos][aos][aos-duration='1150'] {
+  transition-duration: 1150ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='1200'] [aos], [aos][aos][aos-duration='1200'] {
+  transition-duration: 1200ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='1250'] [aos], [aos][aos][aos-duration='1250'] {
+  transition-duration: 1250ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='1300'] [aos], [aos][aos][aos-duration='1300'] {
+  transition-duration: 1300ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='1350'] [aos], [aos][aos][aos-duration='1350'] {
+  transition-duration: 1350ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='1400'] [aos], [aos][aos][aos-duration='1400'] {
+  transition-duration: 1400ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='1450'] [aos], [aos][aos][aos-duration='1450'] {
+  transition-duration: 1450ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='1500'] [aos], [aos][aos][aos-duration='1500'] {
+  transition-duration: 1500ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='1550'] [aos], [aos][aos][aos-duration='1550'] {
+  transition-duration: 1550ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='1600'] [aos], [aos][aos][aos-duration='1600'] {
+  transition-duration: 1600ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='1650'] [aos], [aos][aos][aos-duration='1650'] {
+  transition-duration: 1650ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='1700'] [aos], [aos][aos][aos-duration='1700'] {
+  transition-duration: 1700ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='1750'] [aos], [aos][aos][aos-duration='1750'] {
+  transition-duration: 1750ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='1800'] [aos], [aos][aos][aos-duration='1800'] {
+  transition-duration: 1800ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='1850'] [aos], [aos][aos][aos-duration='1850'] {
+  transition-duration: 1850ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='1900'] [aos], [aos][aos][aos-duration='1900'] {
+  transition-duration: 1900ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='1950'] [aos], [aos][aos][aos-duration='1950'] {
+  transition-duration: 1950ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='2000'] [aos], [aos][aos][aos-duration='2000'] {
+  transition-duration: 2000ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='2050'] [aos], [aos][aos][aos-duration='2050'] {
+  transition-duration: 2050ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='2100'] [aos], [aos][aos][aos-duration='2100'] {
+  transition-duration: 2100ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='2150'] [aos], [aos][aos][aos-duration='2150'] {
+  transition-duration: 2150ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='2200'] [aos], [aos][aos][aos-duration='2200'] {
+  transition-duration: 2200ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='2250'] [aos], [aos][aos][aos-duration='2250'] {
+  transition-duration: 2250ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='2300'] [aos], [aos][aos][aos-duration='2300'] {
+  transition-duration: 2300ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='2350'] [aos], [aos][aos][aos-duration='2350'] {
+  transition-duration: 2350ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='2400'] [aos], [aos][aos][aos-duration='2400'] {
+  transition-duration: 2400ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='2450'] [aos], [aos][aos][aos-duration='2450'] {
+  transition-duration: 2450ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='2500'] [aos], [aos][aos][aos-duration='2500'] {
+  transition-duration: 2500ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='2550'] [aos], [aos][aos][aos-duration='2550'] {
+  transition-duration: 2550ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='2600'] [aos], [aos][aos][aos-duration='2600'] {
+  transition-duration: 2600ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='2650'] [aos], [aos][aos][aos-duration='2650'] {
+  transition-duration: 2650ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='2700'] [aos], [aos][aos][aos-duration='2700'] {
+  transition-duration: 2700ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='2750'] [aos], [aos][aos][aos-duration='2750'] {
+  transition-duration: 2750ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='2800'] [aos], [aos][aos][aos-duration='2800'] {
+  transition-duration: 2800ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='2850'] [aos], [aos][aos][aos-duration='2850'] {
+  transition-duration: 2850ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='2900'] [aos], [aos][aos][aos-duration='2900'] {
+  transition-duration: 2900ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='2950'] [aos], [aos][aos][aos-duration='2950'] {
+  transition-duration: 2950ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000318}}
+body[aos-duration='3000'] [aos], [aos][aos][aos-duration='3000'] {
+  transition-duration: 3000ms;
+}
+
+/**
+ * Delay
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='50'] [aos], [aos][aos][aos-delay='50'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='50'] [aos].aos-animate, [aos][aos][aos-delay='50'].aos-animate {
+  transition-delay: 50ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='100'] [aos], [aos][aos][aos-delay='100'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='100'] [aos].aos-animate, [aos][aos][aos-delay='100'].aos-animate {
+  transition-delay: 100ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='150'] [aos], [aos][aos][aos-delay='150'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='150'] [aos].aos-animate, [aos][aos][aos-delay='150'].aos-animate {
+  transition-delay: 150ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='200'] [aos], [aos][aos][aos-delay='200'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='200'] [aos].aos-animate, [aos][aos][aos-delay='200'].aos-animate {
+  transition-delay: 200ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='250'] [aos], [aos][aos][aos-delay='250'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='250'] [aos].aos-animate, [aos][aos][aos-delay='250'].aos-animate {
+  transition-delay: 250ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='300'] [aos], [aos][aos][aos-delay='300'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='300'] [aos].aos-animate, [aos][aos][aos-delay='300'].aos-animate {
+  transition-delay: 300ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='350'] [aos], [aos][aos][aos-delay='350'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='350'] [aos].aos-animate, [aos][aos][aos-delay='350'].aos-animate {
+  transition-delay: 350ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='400'] [aos], [aos][aos][aos-delay='400'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='400'] [aos].aos-animate, [aos][aos][aos-delay='400'].aos-animate {
+  transition-delay: 400ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='450'] [aos], [aos][aos][aos-delay='450'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='450'] [aos].aos-animate, [aos][aos][aos-delay='450'].aos-animate {
+  transition-delay: 450ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='500'] [aos], [aos][aos][aos-delay='500'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='500'] [aos].aos-animate, [aos][aos][aos-delay='500'].aos-animate {
+  transition-delay: 500ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='550'] [aos], [aos][aos][aos-delay='550'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='550'] [aos].aos-animate, [aos][aos][aos-delay='550'].aos-animate {
+  transition-delay: 550ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='600'] [aos], [aos][aos][aos-delay='600'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='600'] [aos].aos-animate, [aos][aos][aos-delay='600'].aos-animate {
+  transition-delay: 600ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='650'] [aos], [aos][aos][aos-delay='650'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='650'] [aos].aos-animate, [aos][aos][aos-delay='650'].aos-animate {
+  transition-delay: 650ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='700'] [aos], [aos][aos][aos-delay='700'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='700'] [aos].aos-animate, [aos][aos][aos-delay='700'].aos-animate {
+  transition-delay: 700ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='750'] [aos], [aos][aos][aos-delay='750'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='750'] [aos].aos-animate, [aos][aos][aos-delay='750'].aos-animate {
+  transition-delay: 750ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='800'] [aos], [aos][aos][aos-delay='800'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='800'] [aos].aos-animate, [aos][aos][aos-delay='800'].aos-animate {
+  transition-delay: 800ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='850'] [aos], [aos][aos][aos-delay='850'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='850'] [aos].aos-animate, [aos][aos][aos-delay='850'].aos-animate {
+  transition-delay: 850ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='900'] [aos], [aos][aos][aos-delay='900'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='900'] [aos].aos-animate, [aos][aos][aos-delay='900'].aos-animate {
+  transition-delay: 900ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='950'] [aos], [aos][aos][aos-delay='950'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='950'] [aos].aos-animate, [aos][aos][aos-delay='950'].aos-animate {
+  transition-delay: 950ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='1000'] [aos], [aos][aos][aos-delay='1000'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='1000'] [aos].aos-animate, [aos][aos][aos-delay='1000'].aos-animate {
+  transition-delay: 1000ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='1050'] [aos], [aos][aos][aos-delay='1050'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='1050'] [aos].aos-animate, [aos][aos][aos-delay='1050'].aos-animate {
+  transition-delay: 1050ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='1100'] [aos], [aos][aos][aos-delay='1100'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='1100'] [aos].aos-animate, [aos][aos][aos-delay='1100'].aos-animate {
+  transition-delay: 1100ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='1150'] [aos], [aos][aos][aos-delay='1150'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='1150'] [aos].aos-animate, [aos][aos][aos-delay='1150'].aos-animate {
+  transition-delay: 1150ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='1200'] [aos], [aos][aos][aos-delay='1200'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='1200'] [aos].aos-animate, [aos][aos][aos-delay='1200'].aos-animate {
+  transition-delay: 1200ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='1250'] [aos], [aos][aos][aos-delay='1250'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='1250'] [aos].aos-animate, [aos][aos][aos-delay='1250'].aos-animate {
+  transition-delay: 1250ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='1300'] [aos], [aos][aos][aos-delay='1300'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='1300'] [aos].aos-animate, [aos][aos][aos-delay='1300'].aos-animate {
+  transition-delay: 1300ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='1350'] [aos], [aos][aos][aos-delay='1350'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='1350'] [aos].aos-animate, [aos][aos][aos-delay='1350'].aos-animate {
+  transition-delay: 1350ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='1400'] [aos], [aos][aos][aos-delay='1400'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='1400'] [aos].aos-animate, [aos][aos][aos-delay='1400'].aos-animate {
+  transition-delay: 1400ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='1450'] [aos], [aos][aos][aos-delay='1450'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='1450'] [aos].aos-animate, [aos][aos][aos-delay='1450'].aos-animate {
+  transition-delay: 1450ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='1500'] [aos], [aos][aos][aos-delay='1500'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='1500'] [aos].aos-animate, [aos][aos][aos-delay='1500'].aos-animate {
+  transition-delay: 1500ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='1550'] [aos], [aos][aos][aos-delay='1550'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='1550'] [aos].aos-animate, [aos][aos][aos-delay='1550'].aos-animate {
+  transition-delay: 1550ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='1600'] [aos], [aos][aos][aos-delay='1600'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='1600'] [aos].aos-animate, [aos][aos][aos-delay='1600'].aos-animate {
+  transition-delay: 1600ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='1650'] [aos], [aos][aos][aos-delay='1650'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='1650'] [aos].aos-animate, [aos][aos][aos-delay='1650'].aos-animate {
+  transition-delay: 1650ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='1700'] [aos], [aos][aos][aos-delay='1700'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='1700'] [aos].aos-animate, [aos][aos][aos-delay='1700'].aos-animate {
+  transition-delay: 1700ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='1750'] [aos], [aos][aos][aos-delay='1750'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='1750'] [aos].aos-animate, [aos][aos][aos-delay='1750'].aos-animate {
+  transition-delay: 1750ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='1800'] [aos], [aos][aos][aos-delay='1800'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='1800'] [aos].aos-animate, [aos][aos][aos-delay='1800'].aos-animate {
+  transition-delay: 1800ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='1850'] [aos], [aos][aos][aos-delay='1850'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='1850'] [aos].aos-animate, [aos][aos][aos-delay='1850'].aos-animate {
+  transition-delay: 1850ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='1900'] [aos], [aos][aos][aos-delay='1900'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='1900'] [aos].aos-animate, [aos][aos][aos-delay='1900'].aos-animate {
+  transition-delay: 1900ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='1950'] [aos], [aos][aos][aos-delay='1950'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='1950'] [aos].aos-animate, [aos][aos][aos-delay='1950'].aos-animate {
+  transition-delay: 1950ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='2000'] [aos], [aos][aos][aos-delay='2000'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='2000'] [aos].aos-animate, [aos][aos][aos-delay='2000'].aos-animate {
+  transition-delay: 2000ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='2050'] [aos], [aos][aos][aos-delay='2050'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='2050'] [aos].aos-animate, [aos][aos][aos-delay='2050'].aos-animate {
+  transition-delay: 2050ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='2100'] [aos], [aos][aos][aos-delay='2100'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='2100'] [aos].aos-animate, [aos][aos][aos-delay='2100'].aos-animate {
+  transition-delay: 2100ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='2150'] [aos], [aos][aos][aos-delay='2150'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='2150'] [aos].aos-animate, [aos][aos][aos-delay='2150'].aos-animate {
+  transition-delay: 2150ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='2200'] [aos], [aos][aos][aos-delay='2200'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='2200'] [aos].aos-animate, [aos][aos][aos-delay='2200'].aos-animate {
+  transition-delay: 2200ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='2250'] [aos], [aos][aos][aos-delay='2250'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='2250'] [aos].aos-animate, [aos][aos][aos-delay='2250'].aos-animate {
+  transition-delay: 2250ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='2300'] [aos], [aos][aos][aos-delay='2300'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='2300'] [aos].aos-animate, [aos][aos][aos-delay='2300'].aos-animate {
+  transition-delay: 2300ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='2350'] [aos], [aos][aos][aos-delay='2350'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='2350'] [aos].aos-animate, [aos][aos][aos-delay='2350'].aos-animate {
+  transition-delay: 2350ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='2400'] [aos], [aos][aos][aos-delay='2400'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='2400'] [aos].aos-animate, [aos][aos][aos-delay='2400'].aos-animate {
+  transition-delay: 2400ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='2450'] [aos], [aos][aos][aos-delay='2450'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='2450'] [aos].aos-animate, [aos][aos][aos-delay='2450'].aos-animate {
+  transition-delay: 2450ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='2500'] [aos], [aos][aos][aos-delay='2500'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='2500'] [aos].aos-animate, [aos][aos][aos-delay='2500'].aos-animate {
+  transition-delay: 2500ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='2550'] [aos], [aos][aos][aos-delay='2550'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='2550'] [aos].aos-animate, [aos][aos][aos-delay='2550'].aos-animate {
+  transition-delay: 2550ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='2600'] [aos], [aos][aos][aos-delay='2600'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='2600'] [aos].aos-animate, [aos][aos][aos-delay='2600'].aos-animate {
+  transition-delay: 2600ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='2650'] [aos], [aos][aos][aos-delay='2650'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='2650'] [aos].aos-animate, [aos][aos][aos-delay='2650'].aos-animate {
+  transition-delay: 2650ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='2700'] [aos], [aos][aos][aos-delay='2700'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='2700'] [aos].aos-animate, [aos][aos][aos-delay='2700'].aos-animate {
+  transition-delay: 2700ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='2750'] [aos], [aos][aos][aos-delay='2750'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='2750'] [aos].aos-animate, [aos][aos][aos-delay='2750'].aos-animate {
+  transition-delay: 2750ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='2800'] [aos], [aos][aos][aos-delay='2800'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='2800'] [aos].aos-animate, [aos][aos][aos-delay='2800'].aos-animate {
+  transition-delay: 2800ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='2850'] [aos], [aos][aos][aos-delay='2850'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='2850'] [aos].aos-animate, [aos][aos][aos-delay='2850'].aos-animate {
+  transition-delay: 2850ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='2900'] [aos], [aos][aos][aos-delay='2900'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='2900'] [aos].aos-animate, [aos][aos][aos-delay='2900'].aos-animate {
+  transition-delay: 2900ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='2950'] [aos], [aos][aos][aos-delay='2950'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='2950'] [aos].aos-animate, [aos][aos][aos-delay='2950'].aos-animate {
+  transition-delay: 2950ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000330}}
+body[aos-delay='3000'] [aos], [aos][aos][aos-delay='3000'] {
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000333}}
+body[aos-delay='3000'] [aos].aos-animate, [aos][aos][aos-delay='3000'].aos-animate {
+  transition-delay: 3000ms;
+}
+
+/**
+ * Fade animations:
+ * fade
+ * fade-up, fade-down, fade-left, fade-right
+ * fade-up-right, fade-up-left, fade-down-right, fade-down-left
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000350}}
+[aos^='fade'][aos^='fade'] {
+  opacity: 0;
+  transition-property: all;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000352}}
+[aos^='fade'][aos^='fade'].aos-animate {
+  opacity: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000355}}
+[aos='fade-up'] {
+  transform: translate(0, 100px);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000357}}
+[aos='fade-up'].aos-animate {
+  transform: translate(0, 0);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000360}}
+[aos='fade-down'] {
+  transform: translate(0, -100px);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000362}}
+[aos='fade-down'].aos-animate {
+  transform: translate(0, 0);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000365}}
+[aos='fade-right'] {
+  transform: translate(-100px, 0);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000367}}
+[aos='fade-right'].aos-animate {
+  transform: translate(0, 0);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000370}}
+[aos='fade-left'] {
+  transform: translate(100px, 0);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000372}}
+[aos='fade-left'].aos-animate {
+  transform: translate(0, 0);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000375}}
+[aos='fade-up-right'] {
+  transform: translate(-100px, 100px);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000377}}
+[aos='fade-up-right'].aos-animate {
+  transform: translate(0, 0);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000380}}
+[aos='fade-up-left'] {
+  transform: translate(100px, 100px);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000382}}
+[aos='fade-up-left'].aos-animate {
+  transform: translate(0, 0);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000385}}
+[aos='fade-down-right'] {
+  transform: translate(-100px, -100px);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000387}}
+[aos='fade-down-right'].aos-animate {
+  transform: translate(0, 0);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000390}}
+[aos='fade-down-left'] {
+  transform: translate(100px, -100px);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\0000392}}
+[aos='fade-down-left'].aos-animate {
+  transform: translate(0, 0);
+}
+
+/**
+ * Zoom animations:
+ * zoom-in, zoom-in-up, zoom-in-down, zoom-in-left, zoom-in-right
+ * zoom-out, zoom-out-up, zoom-out-down, zoom-out-left, zoom-out-right
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\00003101}}
+[aos^='zoom'][aos^='zoom'] {
+  opacity: 0;
+  transition-property: all;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\00003103}}
+[aos^='zoom'][aos^='zoom'].aos-animate {
+  opacity: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\00003106}}
+[aos='zoom-in'] {
+  transform: scale(0.6);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\00003108}}
+[aos='zoom-in'].aos-animate {
+  transform: scale(1);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\00003111}}
+[aos='zoom-in-up'] {
+  transform: translate(0, 100px) scale(0.6);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\00003113}}
+[aos='zoom-in-up'].aos-animate {
+  transform: translate(0, 0) scale(1);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\00003116}}
+[aos='zoom-in-down'] {
+  transform: translate(0, -100px) scale(0.6);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\00003118}}
+[aos='zoom-in-down'].aos-animate {
+  transform: translate(0, 0) scale(1);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\00003121}}
+[aos='zoom-in-right'] {
+  transform: translate(-100px, 0) scale(0.6);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\00003123}}
+[aos='zoom-in-right'].aos-animate {
+  transform: translate(0, 0) scale(1);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\00003126}}
+[aos='zoom-in-left'] {
+  transform: translate(100px, 0) scale(0.6);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\00003128}}
+[aos='zoom-in-left'].aos-animate {
+  transform: translate(0, 0) scale(1);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\00003131}}
+[aos='zoom-out'] {
+  transform: scale(1.2);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\00003133}}
+[aos='zoom-out'].aos-animate {
+  transform: scale(1);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\00003136}}
+[aos='zoom-out-up'] {
+  transform: translate(0, 100px) scale(1.2);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\00003138}}
+[aos='zoom-out-up'].aos-animate {
+  transform: translate(0, 0) scale(1);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\00003141}}
+[aos='zoom-out-down'] {
+  transform: translate(0, -100px) scale(1.2);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\00003143}}
+[aos='zoom-out-down'].aos-animate {
+  transform: translate(0, 0) scale(1);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\00003146}}
+[aos='zoom-out-right'] {
+  transform: translate(-100px, 0) scale(1.2);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\00003148}}
+[aos='zoom-out-right'].aos-animate {
+  transform: translate(0, 0) scale(1);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\00003151}}
+[aos='zoom-out-left'] {
+  transform: translate(100px, 0) scale(1.2);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\00003153}}
+[aos='zoom-out-left'].aos-animate {
+  transform: translate(0, 0) scale(1);
+}
+
+/**
+ * Slide animations
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\00003164}}
+[aos='slide-up'] {
+  transform: translate(0, 100%);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\00003166}}
+[aos='slide-up'].aos-animate {
+  transform: translate(0, 0);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\00003169}}
+[aos='slide-down'] {
+  transform: translate(0, -100%);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\00003171}}
+[aos='slide-down'].aos-animate {
+  transform: translate(0, 0);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\00003174}}
+[aos='slide-right'] {
+  transform: translate(-100%, 0);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\00003176}}
+[aos='slide-right'].aos-animate {
+  transform: translate(0, 0);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\00003179}}
+[aos='slide-left'] {
+  transform: translate(100%, 0);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\00003181}}
+[aos='slide-left'].aos-animate {
+  transform: translate(0, 0);
+}
+
+/**
+ * Flip animations:
+ * flip-left, flip-right, flip-up, flip-down
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\00003192}}
+[aos^='flip'] {
+  backface-visibility: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\00003196}}
+[aos='flip-left'] {
+  transform: perspective(2500px) rotateY(-100deg);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\00003198}}
+[aos='flip-left'].aos-animate {
+  transform: perspective(2500px) rotateY(0);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\00003201}}
+[aos='flip-right'] {
+  transform: perspective(2500px) rotateY(100deg);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\00003203}}
+[aos='flip-right'].aos-animate {
+  transform: perspective(2500px) rotateY(0);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\00003206}}
+[aos='flip-up'] {
+  transform: perspective(2500px) rotateX(-100deg);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\00003208}}
+[aos='flip-up'].aos-animate {
+  transform: perspective(2500px) rotateX(0);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\00003211}}
+[aos='flip-down'] {
+  transform: perspective(2500px) rotateX(100deg);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/11\/myWeb\/src\/demo\/animate\/aos\/src\/sass\/aos\.scss}line{font-family:\00003213}}
+[aos='flip-down'].aos-animate {
+  transform: perspective(2500px) rotateX(0);
+}
+
+/*# sourceMappingURL=aos.css.map */

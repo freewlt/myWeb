@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="css/iosSelect.css">
 </head>
 <body>
-<div class="form-item item-line" id="selectDate">                 
-    <label>时间选择器</label>                 
-    <div class="pc-box">                     
-        <span data-year="" data-month="" data-date="" id="showDate">点击这里选择时间</span>  
-    </div>             
+<div class="form-item item-line" id="selectDate">
+    <label>时间选择器</label>
+    <div class="pc-box">
+        <span data-year="" data-month="" data-date="" id="showDate">点击这里选择时间</span>
+    </div>
 </div>
 </body>
 <script src="js/zepto.js"></script>
@@ -29,7 +29,7 @@
     showDateDom.attr('data-month', nowMonth);
     showDateDom.attr('data-date', nowDate);
     // 数据初始化
-    function formatYear (nowYear) {
+    function formatYear(nowYear) {
         var arr = [];
         for (var i = nowYear - 5; i <= nowYear + 5; i++) {
             arr.push({
@@ -39,7 +39,7 @@
         }
         return arr;
     }
-    function formatMonth () {
+    function formatMonth() {
         var arr = [];
         for (var i = 1; i <= 12; i++) {
             arr.push({
@@ -49,7 +49,7 @@
         }
         return arr;
     }
-    function formatDate (count) {
+    function formatDate(count) {
         var arr = [];
         for (var i = 1; i <= count; i++) {
             arr.push({
@@ -71,7 +71,7 @@
             return formatDate(30);
         }
         else if (/^2$/.test(month)) {
-            if (year % 4 === 0 && year % 100 !==0 || year % 400 === 0) {
+            if (year % 4 === 0 && year % 100 !== 0 || year % 400 === 0) {
                 return formatDate(29);
             }
             else {
@@ -81,13 +81,13 @@
         else {
             throw new Error('month is illegal');
         }
-        
+
     };
     selectDateDom.bind('click', function () {
         var oneLevelId = showDateDom.attr('data-year');
         var twoLevelId = showDateDom.attr('data-month');
         var threeLevelId = showDateDom.attr('data-date');
-        var iosSelect = new IosSelect(3, 
+        var iosSelect = new IosSelect(3,
             [yearData, monthData, dateData],
             {
                 title: '地址选择',
@@ -103,7 +103,7 @@
                     showDateDom.attr('data-date', selectThreeObj.id);
                     showDateDom.html(selectOneObj.value + ' ' + selectTwoObj.value + ' ' + selectThreeObj.value);
                 }
-        });
+            });
     });
 </script>
 </body>

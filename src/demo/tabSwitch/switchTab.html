@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>选项卡切换</title>
-    <script src="../dropDown/js/jquery-1.11.1.min.js"></script>
+    <script src="./picCut/js/jquery.js"></script>
     <style>
         li {
             list-style: none;
@@ -16,7 +16,7 @@
             cursor: pointer;
         }
 
-        ul, .tablist {
+        ul, .tabList {
             float: left;
         }
 
@@ -28,17 +28,17 @@
             color: #fff;
         }
 
-        .tablist {
+        .tabList {
             margin-left: 20px;
         }
 
-        .tablist div {
+        .tabList div {
             background: #f0f;
             height: 100px;
             width: 600px;
         }
 
-        .tablist .listsec, .tablist .listthi {
+        .tabList .listSec, .tabList .listThi {
             display: none;
         }
     </style>
@@ -47,7 +47,7 @@
             $(" li").click(function () {
                 var index = $(this).index();
                 $(this).addClass("active").siblings().removeClass("active");
-                $(".tablist .tablt").eq(index).show().siblings().hide();
+                $(".tabList .tabBox").eq(index).show().siblings().hide();
             })
         }
     </script>
@@ -58,14 +58,14 @@
     <li><a>支出明细</a></li>
     <li><a>我的优惠券</a></li>
 </ul>
-<div class="tablist">
-    <div class="tablt listfir">
+<div class="tabList">
+    <div class="tabBox listFir">
         <p>充值<span>1000</span>元 <span class="time">2015-11-12</span></p>
     </div>
-    <div class="tablt listsec">
+    <div class="tabBox listSec">
         <p>dg三个<span>三个</span>元 <span class="time">2015-11-12</span></p>
     </div>
-    <div class="tablt listsec">
+    <div class="tabBox listThi">
         <p>dg色鬼个<span>三个</span>元 <span class="time">2015-11-12</span></p>
     </div>
 </div>

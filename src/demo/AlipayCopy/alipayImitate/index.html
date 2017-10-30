@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>jQuery插件模拟支付宝密码输入框效果</title>
-<meta name="viewport"content="width=device-width,initial-scale=1, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>jQuery插件模拟支付宝密码输入框效果</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
 </head>
-<link href="css/passwordkeyboard.css" rel="stylesheet" type="text/css" />
+<link href="css/passwordkeyboard.css" rel="stylesheet" type="text/css"/>
 <script src="js/jquery.min.js"></script>
 <script src="js/fastclick.js"></script>
 <script>
-    function init(){
-        var width=$(window).width();
-        var height=$(window).height();
-        $("body").css("height",height);
-        $("body").css("width",width);
+    function init() {
+        var width = $(window).width();
+        var height = $(window).height();
+        $("body").css("height", height);
+        $("body").css("width", width);
     }
-    window.addEventListener('load', function() {
+    window.addEventListener('load', function () {
         FastClick.attach(document.body);
     }, false);
 </script>
@@ -23,17 +23,17 @@
 
 <!-- 代码部分begin -->
 <div>
-    <div style="text-align: center;padding-top: 10px;p">
+    <div style="text-align: center;padding-top: 10px;">
         <span id="set_text" style="font-size: large;"></span>
     </div>
     <div style="padding-top: 20px;text-align: center;">
-        <form id="password" >
-            <input readonly class="pass" type="password"maxlength="1"value="">
-            <input readonly class="pass" type="password"maxlength="1"value="">
-            <input readonly class="pass" type="password"maxlength="1"value="">
-            <input readonly class="pass" type="password"maxlength="1"value="">
-            <input readonly class="pass" type="password"maxlength="1"value="">
-            <input readonly class="pass pass_right" type="password"maxlength="1" value="">
+        <form id="password">
+            <input readonly class="pass" type="password" maxlength="1" value="">
+            <input readonly class="pass" type="password" maxlength="1" value="">
+            <input readonly class="pass" type="password" maxlength="1" value="">
+            <input readonly class="pass" type="password" maxlength="1" value="">
+            <input readonly class="pass" type="password" maxlength="1" value="">
+            <input readonly class="pass pass_right" type="password" maxlength="1" value="">
         </form>
     </div>
 </div>

@@ -1,12 +1,14 @@
-.jsddm {
-    margin: 0;
-    padding: 0
+#all{
+    margin:0 auto;
+    text-align: center;
+    width:100%;
 }
 
 .jsddm li {
-    float: left;
+    display: inline-block;
     list-style: none;
-    font: 12px Tahoma, Arial
+    font: 12px Tahoma, Arial;
+    margin-left:-6px;
 }
 
 .jsddm li a {
@@ -29,12 +31,13 @@
     padding: 0;
     position: absolute;
     visibility: hidden;
-    border-top: 1px solid white
+    border-top: 1px solid white;
 }
 
 .jsddm li ul li {
     float: none;
-    display: inline
+    display: inline;
+    margin-left:0;
 }
 
 .jsddm li ul li a {

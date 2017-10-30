@@ -3,6 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <style>
+        form{
+            text-align: center;
+        }
+        input{
+            margin-top:1rem;
+        }
+        span{
+            padding-left:10px;
+        }
+    </style>
     <script>
         function fd() {
             var a = false, b = false;
@@ -43,9 +54,9 @@
 <body>
 <form action="index.html" method="post" name="form1">
     <input type="text" value="手机" name="phone" onfocus="if (value =='手机'){value =''}"
-           onblur="if (value ==''){value='手机'}"><span id="phone">请输入手机号</span>
+           onblur="if (value ==''){value='手机'}"><span id="phone">请输入手机号</span><br>
     <input placeholder="密码" type="password" name="pass_wd" onfocus="if (value =='密码'){value =''}"
-           onblur="if (value ==''){value='密码'}"><span id="pass_wd">请输入密码</span>
+           onblur="if (value ==''){value='密码'}"><span id="pass_wd">请 输 入密 码</span><br>
     <input type="button" value="登录" onclick="fd();">
 </form>
 </body>

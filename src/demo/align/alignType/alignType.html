@@ -1,44 +1,50 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>轻量级多种弹出窗口方法——Featherlight.js</title>
-<link href="css/bootstrap.min.css" rel="stylesheet" />
-<link href="css/lanrenzhijia.css" type="text/css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <title>轻量级多种弹出窗口方法——Featherlight.js</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/lanrenzhijia.css" type="text/css" rel="stylesheet"/>
 </head>
 <body>
 <div class="container">
-  <div class="jumbotron">
-    <h1>Featherlight<i>.js</i><span> The ultra slim lightbox.</span></h1>
-    <p class="lead">Featherlight is a very lightweight jQuery lightbox.</p>
-    <div class="btn-group"> 
-        <a class="btn btn-default" href="javascript:" data-featherlight="#fl1">默认</a> 
-        <a class="btn btn-default" href="javascript:" data-featherlight="#fl2" data-featherlight-variant="fixwidth">自定义样式</a> 
-        <a class="btn btn-default" href="images/lanrenzhijia.jpg" data-featherlight="image">图片</a> 
-        <a class="btn btn-default" href="javascript:" data-featherlight="#fl3">iFrame</a> 
-        <a class="btn btn-default" href="index.html .ajaxcontent" data-featherlight="ajax">Ajax</a> 
+    <div class="jumbotron">
+        <h1>Featherlight<i>.js</i><span> The ultra slim lightbox.</span></h1>
+        <p class="lead">Featherlight is a very lightweight jQuery lightbox.</p>
+        <div class="btn-group">
+            <a class="btn btn-default" href="javascript:" data-featherlight="#fl1">默认</a>
+            <a class="btn btn-default" href="javascript:" data-featherlight="#fl2" data-featherlight-variant="fixwidth">自定义样式</a>
+            <a class="btn btn-default" href="images/lanrenzhijia.jpg" data-featherlight="image">图片</a>
+            <a class="btn btn-default" href="javascript:" data-featherlight="#fl3">iFrame</a>
+            <a class="btn btn-default" href="index.html .ajaxcontent" data-featherlight="ajax">Ajax</a>
+        </div>
     </div>
-  </div>
-  
-  <div class="row marketing text-center"> <a class="doc btn btn-lg btn-default" target="_blank" href="https://github.com/noelboss/featherlight/#installation"> 点击查看详细使用说明 </a> </div>
-  
+
+    <div class="row marketing text-center"><a class="doc btn btn-lg btn-default" target="_blank"
+                                              href="https://github.com/noelboss/featherlight/#installation">
+        点击查看详细使用说明 </a></div>
+
 </div>
 
 <div class="lightbox" id="fl1">
-  <h2>Featherlight Default</h2>
-  <p> This is a default featherlight lightbox. It's flexible in height and width. Everything that is used to display and style the box can be found in the featherlight.css file which is pretty simple. </p>
+    <h2>Featherlight Default</h2>
+    <p> This is a default featherlight lightbox. It's flexible in height and width. Everything that is used to display
+        and style the box can be found in the featherlight.css file which is pretty simple. </p>
 </div>
 
 <div class="lightbox" id="fl2">
-  <h2>Featherlight with custom styles</h2>
-  <p>It's easy to override the styling of Featherligh. All you need to do is specify an additional class in the data-featherlight-variant of the triggering element. This class will be added and you can then override everything. You can also reset all CSS: <em>$('.special').featherlight({ resetCss: true });</em> </p>
+    <h2>Featherlight with custom styles</h2>
+    <p>It's easy to override the styling of Featherligh. All you need to do is specify an additional class in the
+        data-featherlight-variant of the triggering element. This class will be added and you can then override
+        everything. You can also reset all CSS: <em>$('.special').featherlight({ resetCss: true });</em></p>
 </div>
 
-<iframe class="lightbox" src="http://www.lanrenzhijia.com/" width="500" height="281" id="fl3" style="border:none;" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe class="lightbox" src="http://www.lanrenzhijia.com/" width="500" height="281" id="fl3" style="border:none;"
+        webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 <div class="ajaxcontent lightbox">
-  <h2>This Ligthbox was loaded using ajax</h2>
-  <p>With little code, you can build lightboxes that use custom content loaded with ajax...</p>
+    <h2>This Ligthbox was loaded using ajax</h2>
+    <p>With little code, you can build lightboxes that use custom content loaded with ajax...</p>
 </div>
 
 <script src="js/jquery.min.js"></script>

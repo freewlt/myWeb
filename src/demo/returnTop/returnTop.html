@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*返回顶部*/
+        .move {
+            position: fixed;
+            right: 10%;
+            bottom: 10%;
+            cursor: pointer;
+            background: #000000;
+            width: 57px;
+            height: 57px;
+            display: none;
+
+        }
+    </style>
+</head>
+<body style="height: 2000px;">
+<!--返回顶部-->
+<a class="move"></a>
+
+<script src="../../assets/js/jquery-1.4.2.min.js"></script>
+<script>
+    // 绑定页面滚动事件
+    $(document).bind('scroll', function () {
+        var len = $(this).scrollTop()
+        if (len >= 300) {
+            //显示回到顶部按钮
+            $('.move').show();
+        } else {
+            //影藏回到顶部按钮
+            $('.move').hide();
+        }
+    });
+    //返回顶部
+    $(".move").click(function () {
+        var speed = 200;//滑动的速度
+        $('body,html').animate({scrollTop: 0}, speed);
+        return false;
+    });
+</script>
+</body>
+</html>
