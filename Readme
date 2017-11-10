@@ -147,6 +147,9 @@
 ### jQuery点赞文字放大特效代码               src/demo/animate/animateLike/dianZan.html
 ### 超赞页面滚动元素动画jQuery动画库         src/demo/animate/aos/aos.html
 
+#表格
+### 表格增删排序操作                         src/demo/table/table.html
+
 
 #### 特效集锦    index.html
 
