@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>无缝滚动</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .offLfBox {
+            width: 770px;
+            height: 90px;
+            margin: 100px auto;
+            position: relative;
+            background: red;
+            overflow: hidden;
+        }
+
+        .offLfUl {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .offLfLi {
+            list-style: none;
+            float: left;
+            width: 144px;
+        }
+
+        .offLfPic {
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+<a href="javascript:;" class="left">向左走</a>
+<a href="javascript:;" class="right">向右走</a>
+<div class="offLfBox" id="divBox">
+    <ul class="offLfUl">
+        <li class="offLfLi"><img src="images/1.png" class="offLfPic"></li>
+        <li class="offLfLi"><img src="images/2.png" class="offLfPic"></li>
+        <li class="offLfLi"><img src="images/3.png" class="offLfPic"></li>
+        <li class="offLfLi"><img src="images/4.png" class="offLfPic"></li>
+        <li class="offLfLi"><img src="images/5.png" class="offLfPic"></li>
+    </ul>
+</div>
+
+<script>
+    window.onload = function () {
+        var oDiv = document.getElementById('divBox');
+        var oUl = oDiv.getElementsByTagName('ul')[0];
+        var aLi = oDiv.getElementsByTagName('li');
+        var speed = -2;
+
+        oUl.innerHTML = oUl.innerHTML + oUl.innerHTML;
+        oUl.style.width = aLi[0].offsetWidth * aLi.length + 'px';
+        function time() {
+            if (oUl.offsetLeft < -oUl.offsetWidth / 2) {
+                oUl.style.left = '0'
+            }
+            if (oUl.offsetLeft > 0) {
+                oUl.style.left = -oUl.offsetWidth / 2 + 'px'
+            }
+            oUl.style.left = oUl.offsetLeft + speed + 'px'
+        }
+
+        var timer = setInterval(time, 30)
+//        var timer = setInterval(function () {
+//            if (oUl.offsetLeft < -oUl.offsetWidth / 2) {
+//                oUl.style.left = '0'
+//            }
+//            if (oUl.offsetLeft > 0) {
+//                oUl.style.left = -oUl.offsetWidth / 2 + 'px'
+//            }
+//            oUl.style.left = oUl.offsetLeft + 2 + 'px'
+//        }, 30)
+        oDiv.onmouseover = function () {
+            clearInterval(timer)
+        };
+        oDiv.onmouseout = function () {
+            timer = setInterval(time, 30)
+        };
+        document.getElementsByTagName('a')[0].onclick = function () {
+            speed = -2
+        };
+        document.getElementsByTagName('a')[1].onclick = function () {
+            speed = 2
+        };
+
+    }
+</script>
+</body>
+</html>

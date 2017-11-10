@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <title>manage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="barcode/JsBarcode.all.js"></script>
-     <style>
-        #barcode{
-            width:300px;//在这里更改你想要的宽度
+    <style>
+        #barcode {
+            width: 300px;
+        / / 在这里更改你想要的宽度
         }
     </style>
-  </head>
-  <body>
-   <div>
-      <img id="barcode"/>
-   </div>
-    <script>
-        var barcode = document.getElementById('barcode'),
+</head>
+<body>
+<div>
+    <img id="barcode"/>
+</div>
+<script>
+    var barcode = document.getElementById('barcode'),
         str = "12345678",
         options = {
-            format:"CODE128",
-            displayValue:true,
-            fontSize:18,
-            height:100
+            format: "CODE128",
+            displayValue: true,
+            fontSize: 18,
+            height: 100
         };
-        JsBarcode(barcode, str, options);//原生
-                $('#barcode').JsBarcode(string,options);//jQuery
-        </script>
-  </body>
+    JsBarcode(barcode, str, options);//原生
+    $('#barcode').JsBarcode(string, options);//jQuery
+</script>
+</body>
 </html>

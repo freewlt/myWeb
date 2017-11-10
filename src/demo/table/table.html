@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table {
+            width: 500px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<!--表格-->
+姓名：<input type="text" id="name">
+年龄：<input type="text" id="age">
+<input type="button" value="增加" id="add">
+<input type="button" value="搜索" id="search">
+<input type="button" value="排序" id="sequencing">
+<table id="table" border="1" cellpadding="0" cellspacing="0">
+    <thead>
+    <tr>
+        <th>id</th>
+        <th>姓名</th>
+        <th>年龄</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>小张</td>
+        <td>23</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>小张</td>
+        <td>23</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>刘能</td>
+        <td>23</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>李四</td>
+        <td>23</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>张扬</td>
+        <td>23</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>王晓</td>
+        <td>23</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>Blue</td>
+        <td>23</td>
+        <td></td>
+    </tr>
+    </tbody>
+</table>
+
+
+<script>
+    window.onload = function () {
+        //表格
+        var table = document.getElementById('table');
+        var add = document.getElementById('add');
+        var search = document.getElementById('search');
+        var name = document.getElementById('name');
+        var age = document.getElementById('age');
+        var Id = table.tBodies[0].rows.length + 1;
+        var oldColor = '';
+        for (var i = 0; i < table.tBodies[0].rows.length; i++) {
+            if (i % 2 == 1) {
+                table.tBodies[0].rows[i].style.background = 'yellow'
+            }
+
+            table.tBodies[0].rows[i].onmouseover = function () {
+                oldColor = this.style.background;
+                this.style.background = 'green'
+            }
+            table.tBodies[0].rows[i].onmouseout = function () {
+                this.style.background = oldColor;
+            }
+        }
+        //增加
+        add.onclick = function () {
+            var oTr = document.createElement('tr');
+            var oTd = document.createElement('td');
+            oTd.innerHTML = Id++;
+            oTr.appendChild(oTd);
+
+            var oTd = document.createElement('td');
+            oTd.innerHTML = name.value;
+            oTr.appendChild(oTd);
+
+            var oTd = document.createElement('td');
+            oTd.innerHTML = age.value;
+            oTr.appendChild(oTd);
+
+            var oTd = document.createElement('td');
+            oTd.innerHTML = '<a href="javascript:;">删除</a>';
+            oTr.appendChild(oTd);
+            oTd.getElementsByTagName('a')[0].onclick = function () {
+                table.tBodies[0].removeChild(this.parentNode.parentNode)
+            }
+
+            table.tBodies[0].appendChild(oTr)
+        }
+        //搜索
+        search.onclick = function () {
+            for (var i = 0; i < table.tBodies[0].rows.length; i++) {
+                var sTab = table.tBodies[0].rows[i].cells[1].innerHTML.toLowerCase();
+                var sTxt = name.value.toLowerCase();
+                var arr = sTxt.split('');
+                table.tBodies[0].rows[i].style.display = 'none'
+                for (var j = 0; j < arr.length; j++) {
+                    if (sTab.search(arr[j]) != -1) {
+                        table.tBodies[0].rows[i].style.display = 'block'
+                    } else {
+
+                    }
+                }
+            }
+
+        }
+        //排序
+        sequencing.onclick = function () {
+            var arr = [];
+            for (var i = 0; i < table.tBodies[0].rows.length; i++) {
+                arr[i] = table.tBodies[0].rows[i];
+            }
+            arr.sort(function (tr1, tr2) {
+                var tr1 = parseInt(tr1.cells[0].innerHTML);
+                var tr2 = parseInt(tr2.cells[0].innerHTML);
+                return tr1 - tr2;
+            })
+            for (var i = 0; i < arr.length; i++) {
+                table.tBodies[0].appendChild(arr[i]);
+            }
+        }
+
+
+    }
+</script>
+</body>
+</html>
