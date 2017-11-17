@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改支付密码设置</title>
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"
+          name="viewport" id="viewport"/>
+    <link rel="stylesheet" type="text/css" href="css/public.css"/>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js" charset="utf-8"></script>
+    <script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/password.css">
+</head>
+<body>
+<div class="outer">
+    <section style="width: 90%; margin: 0 auto;">
+        <h3 class="payTitle">请输入6位易生活支付密码
+            <span class="eye"></span>
+        </h3>
+    </section>
+    <div class="code-section">
+        <div class="am-password-handy">
+            <input type="tel" id="password" name="spwd_unencrypt"
+                   maxlength="6" pattern="\d*" autocomplete="off">
+            <input type="text" maxlength="6" readonly="readonly" id="show_passwd">
+            <ul id="hide_passwd" class="am-password-handy-security">
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+$(function () {
+    var passwdStatus = false;
+    $("#password").on("input", function(e) {
+        var val = this.value;
+        console.log(val,passwdStatus)
+        $("#show_passwd").val(val);
+        var $iel = $("#hide_passwd").find("i")
+        $iel.css({"visibility":"hidden"})
+        if(passwdStatus) {
+            $("#show_passwd").css({"display": "inline-block"});
+        } else {
+            $("#show_passwd").css({"display": "none"});
+            for(var i = 0; i< val.length; i++) {
+                $iel.eq(i).css({"visibility":"visible"});
+            }
+        }
+    })
+    var fn = function(){
+        var val = $("#password").val();
+        console.log(passwdStatus);
+        if(!passwdStatus) {
+            $("#show_passwd").css({"display": "inline-block"});
+            passwdStatus = true;
+            var $iel = $("#hide_passwd").find("i").css({"visibility":"hidden"});
+        }else {
+            $("#show_passwd").css({"display": "none"});
+            passwdStatus = false;
+            var $iel = $("#hide_passwd").find("i")
+            $iel.css({"visibility":"hidden"})
+            for(var i = 0; i< val.length; i++) {
+                $iel.eq(i).css({"visibility":"visible"});
+            }
+        }
+    }
+    $(".eye").click(fn);
+
+    $("#password").focus(function(){
+        console.log(1)
+    })
+})
+</script>
+</body>
+</html>
