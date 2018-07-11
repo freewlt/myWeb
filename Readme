@@ -90,6 +90,7 @@
 #进度条
 ### jquery css3进度条加载特效                 src/demo/progressBar/barLoad/index.html
 ### CSS，Jquery精美进度条和滑动条插件         src/demo/progressBar/barId/index.html
+### 鼠标拖动小方块改变div大小                 src/demo/progressBar/process.html
 
 #地图
 ### 地图地理位置                              src/demo/map/location.html
