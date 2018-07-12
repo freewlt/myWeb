@@ -109,6 +109,7 @@
         }
         var move = function (e) {
 //            console.log("鼠标拖动")
+            e.preventDefault();
             if (ifBool) {
                 if (!e.touches) {    //兼容移动端
                     var y = e.clientY;
