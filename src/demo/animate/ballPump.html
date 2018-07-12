@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>打气球</title>
+    <!--样式-->
+    <style>
+        .box {
+            width: 80%;
+            height: 500px;
+            text-align: center;
+        }
+
+        .box .ball {
+            width: 160px;
+            height: 160px;
+            margin: 50px auto;
+            background: #faf9f9;
+            border-radius: 50% 50% 25% 50%;
+            transform: rotate(45deg);
+            box-shadow: -8px -8px 80px -8px #873940 inset;
+        }
+
+        .box .ball::after {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            content: "";
+            display: block;
+            border: 8px solid transparent;
+            border-right-color: #873940;
+            transform: rotate(45deg);
+            border-radius: 50%;
+        }
+
+        .box .btnBox {
+            clear: both;
+            margin-top: 100px;
+        }
+
+        .box .btnBox input {
+            padding: 10px 20px;
+            margin: 0 20px;
+            border: none;
+            border-radius: 10px;
+            color: #ffffff;
+            background: pink;
+            outline: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<!--布局-->
+<div class="box" id="box">
+    <div class="ball"></div>
+    <div class="btnBox">
+        <input type="button" value="加油" class="plus">
+        <input type="button" value="漏油" class="minus">
+    </div>
+</div>
+
+<!--js-->
+<script type="text/javascript">
+    var box = document.getElementById('box');
+    //    var ball = box.getElementsByClassName('ball');
+    var ball = document.getElementsByTagName('div')[1];
+    var plus = document.getElementsByTagName('input')[0];
+    var minus = document.getElementsByTagName('input')[1];
+    var ballWidth = ball.offsetWidth || ball.clientWidth;
+    var ballHeight = ball.offsetHeight || ball.clientHeight;
+    var speed = 10;
+    var i = 0;
+    plus.onclick = function () {
+        i++;
+//        if (i % 2 == 0) {
+////            ballHeight += speed;
+//            var a = ball.style.width = ballWidth + speed + 'px';
+//            var b = ball.style.height = ballHeight
+//        } else {
+////            ballWidth += speed;
+//            var a = ball.style.width = ballWidth
+//            var b = ball.style.height = ballHeight + speed + 'px';
+//        }
+//        $('.ball').css('height',ballHeight)
+
+        ballHeight += speed;
+        ballWidth += speed;
+        ball.style.width = ballHeight + 'px';
+        ball.style.height = ballWidth + 'px';
+    }
+    minus.onclick = function () {
+        i--;
+        ballHeight -= speed;
+        ballWidth -= speed;
+        ball.style.width = ballHeight + 'px';
+        ball.style.height = ballWidth + 'px';
+    }
+</script>
+</body>
+</html>
