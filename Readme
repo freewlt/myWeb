@@ -82,13 +82,14 @@
 
 #表单验证
 ### 登录密码                                  src/demo/select/login.html
-### Select选择是否显示注册页面                src/demo/select/registerSelect.html
+### Select选择是否显示注册页面                 src/demo/select/login.html
+### vue表单选择                               src/demo/vueCheck/add.html
 
 #分页
 ### 页码切换 page                             src/demo/paging/index.html
 
 #进度条
-### jquery css3进度条加载特效                 src/demo/progressBar/barLoad/index.html
+### jquery css3进度条加载特效                src/demo/progressBar/barLoad/index.html
 ### CSS，Jquery精美进度条和滑动条插件         src/demo/progressBar/barId/index.html
 ### 鼠标拖动小方块改变div大小                 src/demo/progressBar/process.html
 
@@ -116,7 +117,8 @@
 
 #全选反选
 ### 全选反选                                 src/demo/selectAll/allSelect.html(采用onclick事件，给每个input添加onclick事件。)
-### 全选反选全不选                           src/demo/selectAll/allSelectSec.html
+### 全选反选全不选                            src/demo/selectAll/allSelect.html(采用onclick事件，给每个input添加onclick事件。)
+### vue全选反选                              src/demo/vueCheck/checkBox.html
 
 #加载刷新
 ### 下拉显示背景图片，刷新完跳转到新的页面   src/demo/loadRefresh/refreshLoad/refreshLoad.html

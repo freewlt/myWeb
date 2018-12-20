@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" content="text/html">
+    <title>电子卡充值返现</title>
+</head>
+<body style="min-width: auto;padding: 0;">
+<div class="autoRedBag electorBox">
+    <section class="form set">
+        <form id="inputForm" action="saveRedBagActiveRecord.jhtml" method="post" novalidate="novalidate">
+            <table class="autoRedBagTable autoTableTxt">
+                <tr>
+                    <td class="verAlign">
+                        <span class="tip">活动名称:</span>
+                        <div class="form-group-right">
+                            <input type="text" name="name" class="form-control activityName" placeholder="请输入活动名称"
+                                   maxlength="32">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="verAlign ">
+                        <span class="tip">有效日期:</span>
+                        <div class="form-group-right activityTime">
+                            <input class="form-control  datetime formDateTimeStart" type="text" placeholder="开始时间"
+                                   name="startDate" id="activeStartDate"
+                                   onfocus="WdatePicker({dateFmt:'yyyy-MM-dd',maxDate:'#F{$dp.$D(\'activeEndDate\')}'})">
+                            --
+                            <input class="form-control  datetime formDateTimeEnd " type="text" placeholder="结束时间"
+                                   name="endDate" id="activeEndDate"
+                                   onfocus="WdatePicker({dateFmt:'yyyy-MM-dd',minDate:'#F{$dp.$D(\'activeStartDate\')}'})">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="form-group redBagItem message" v-for="(item,index) in activity">
+                <table class="autoTableTxt">
+                    <tr>
+                        <td>
+                            <div class="checkboxList">
+                                <span class="tip">油站名称:</span>
+                                <div class="autoRedLabelBox">
+                                    <label>
+                                        <input class="useType checkInput" type="checkbox" v-model='oilList.checkAll'
+                                               v-on:click='checkAllStation'>全选
+                                    </label>
+                                    <label v-for="item in oilList.list">
+                                        <input class="useType checkInput" :value="item" type="checkbox"
+                                               v-model='item.checked' @change='checkItemStation'>
+                                        {{item.station}}
+                                    </label>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkboxList">
+                                <span class="tip">用户类型:</span>
+                                <div class="autoRedLabelBox">
+                                    <label>
+                                        <input class="useType checkInput" value="" type="checkbox"
+                                               v-model='userType.checkAll' v-on:click='checkAllUser'>全选
+                                    </label>
+                                    <label v-for="item in userType.list">
+                                        <input class="useType checkInput" :value="item" type="checkbox"
+                                               v-model='item.checked' @change='checkItemUser'>
+                                        {{item.station}}
+                                    </label>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr v-for="(item,index) in recharge">
+                        <td>
+                            <span class="tip">充值金额:</span>
+                            <input type="text" class="form-control formInputWidth"/>
+                            <span class="tips">元</span>
+                            <span class="tips tipsPadding">是否返现:</span>
+                            <label>
+                                <input class="useType radioInput" type="radio"
+                                       v-bind:checked="item.hasMoney ? 'checked' : ''" @click="isFan(item.id,'yes')">是
+                            </label>
+                            <label>
+                                <input class="useType radioInput" type="radio"
+                                       v-bind:checked="item.hasMoney ? '' : 'checked'" @click="isFan(item.id,'no')">否
+                            </label>
+                            <span class="tips tipsPadding">返现金额:</span>
+                            <input class="form-control formInputWidth" v-bind:class="item.hasMoney ? '' : 'disabled'"
+                                   type="text" v-bind:disabled="!item.hasMoney" v-model="item.returnMoney"/>
+                            <span class="tips">元</span>
+                            <a class="ruleAdd electronicBtn" @click="remove(item.id)" href="javascript:;">-</a>
+                            <a class="ruleAdd electronicBtn" @click="add" href="javascript:;"
+                               v-if="index===recharge.length-1">+</a>
+                        </td>
+                    </tr>
+                </table>
+                <div class="btnGroupElect">
+                    <a class="deletePic" @click="delect(item.id)" v-if="item.hasDelect"></a>
+                </div>
+            </div>
+            <div class="form-group formControlBtn">
+                <button class="red copy" @click="addNew" type="button">新增</button>
+                <button class="red formControlSaveBtn" type="submit" @click="save">保存</button>
+            </div>
+        </form>
+    </section>
+
+</div>
+
+<script src="../../assets/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="vue.2.4.4.min.js"></script>
+<script>
+    var electorBox = new Vue({
+        el: '.electorBox',
+        data: {
+            oilList: {
+                checkAll: false,
+                list: [
+                    {station: '鑫文龙加油站', checked: true},
+                    {station: '鑫站', checked: false},
+                    {station: '鑫文龙', checked: false}
+                ]
+            },
+            userType: {
+                checkAll: false,
+                list: [
+                    {station: '鑫站', checked: false},
+                    {station: '鑫站', checked: false},
+                    {station: '鑫文龙', checked: false}
+                ]
+            },
+            recharge: [
+                {id: 1, station: '鑫文龙加油站', hasAdd: false, returnMoney: '100', hasMoney: true},
+                {id: 6, station: '鑫文龙加油站', hasAdd: true, returnMoney: '10', hasMoney: true}
+            ],
+            activity: [
+                {id: '1', hasDelect: false}
+            ],
+        },
+        methods: {
+            isFan: function (id, value) {
+                this.recharge = this.recharge.map(function (item) {
+                    if (item.id == id && value == "no") {
+                        item.hasMoney = false;
+                    }
+                    if (item.id == id && value == "yes") {
+                        item.hasMoney = true;
+                    }
+                    return item
+                })
+            },
+            add: function () {
+                this.recharge.push({
+                    id: Math.random().toString("32").split('.')[1],
+                    station: '鑫文龙加油站',
+                    returnMoney: 1200,
+                    hasMoney: true,
+                })
+            },
+            remove: function (id) {
+                let length = this.recharge.length;
+                if (length === 1) return false;
+                this.recharge = this.recharge.filter(function (x) {
+                    return x.id !== id
+                })
+            },
+            addNew: function () {
+                this.activity.push({
+                    id: Math.random().toString("32").split('.')[1],
+                    hasDelect: true,
+                })
+            },
+            delect: function (id) {
+                let length = this.activity.length;
+                if (length === 1) return false;
+                this.activity = this.activity.filter(function (x) {
+                    return x.id !== id
+                })
+            },
+            save: function (e) {
+                e.preventDefault();
+                $.ajax({
+                    url: 'http://127.0.0.1/activity',
+                    type: "post",
+                    dataType: 'json',
+                    data: JSON.stringify(this.recharge),
+                    success: function () {
+                        console.log("sucess")
+                    },
+                    error: function () {
+                        console.log("fail")
+                    }
+                });
+                return false;
+            },
+            checkAllStation: function () {
+                let checkAll = this.oilList.checkAll;
+                let len = this.activity.length;
+                for (let i = 0; i < len; i++) {
+                    let list = this.oilList.list.map(item => Object.assign(item, {checked: checkAll}));
+                    this.oilList = {checkAll: checkAll, list: list};
+                    return this.oilList
+                }
+            },
+            checkItemStation: function () {
+                let list = this.oilList.list;
+                let selectedItem = list.filter((a) => a.checked);
+                this.oilList.checkAll = list.length === selectedItem.length;
+            },
+            checkAllUser: function () {
+                let checkAll = this.userType.checkAll;
+                let list = this.userType.list.map(item => Object.assign(item, {checked: checkAll}));
+                this.userType = {checkAll: checkAll, list: list};
+            },
+            checkItemUser: function () {
+                let list = this.userType.list;
+                let selectedItem = list.filter((a) => a.checked);
+                this.userType.checkAll = list.length === selectedItem.length;
+            }
+        }
+    })
+</script>
+</body>
+</html>

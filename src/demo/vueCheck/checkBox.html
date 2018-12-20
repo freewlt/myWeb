@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>helloworld</title>
+    <script src="vue.2.4.4.min.js"></script>
+</head>
+<body>
+<h1>helloworld 实例</h1>
+<hr>
+<div id="app">
+    <div style="float:left">
+        <input type="checkbox"
+               class="input-checkbox"
+               :checked="fruits.length===fruitIds.length && fruitIds.length"
+               @click="checkedAll"/>
+        <label>全选</label>
+        <div v-for="fruite in fruits"
+             :key="fruite.id"
+             class="fruiteList">
+            <input type="checkbox"
+                   :checked="fruitIds.indexOf(fruite.id)>=0"
+                   name="checkboxinput"
+                   class="input-checkbox"
+                   @click="checkedOne(fruite.id)">
+            <label>{{fruite.value}}</label>
+        </div>
+    </div>
+    <div style="float:left">
+        <input type="checkbox"
+               class="input-checkbox"
+               :checked="list.length===listIds.length && listIds.length"
+               @click="checkedAll2"/>
+        <label>全选</label>
+        <div v-for="fruite in list"
+             :key="fruite.id"
+             class="fruiteList">
+            <input type="checkbox"
+                   :checked="listIds.indexOf(fruite.id)>=0"
+                   name="checkboxinput"
+                   class="input-checkbox"
+                   @click="checkedOne2(fruite.id)">
+            <label>{{fruite.value}}</label>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var app = new Vue({
+        el: '#app',
+        data: {
+            fruits: [
+                {
+                    id: '1',
+                    value: '苹果'
+                }, {
+                    id: '2',
+                    value: '荔枝'
+                }, {
+                    id: '3',
+                    value: '香蕉'
+                }, {
+                    id: '4',
+                    value: '火龙果'
+                }],
+            list: [{
+                id: '1',
+                value: '苹果'
+            }, {
+                id: '2',
+                value: '荔枝'
+            }, {
+                id: '3',
+                value: '香蕉'
+            }, {
+                id: '4',
+                value: '火龙果'
+            }
+            ],
+            fruitIds: ['1', '3', '4'],
+            listIds: ['1', '2'],
+            // 初始化全选按钮, 默认不选
+            isCheckedAll: false
+
+        },
+        methods: {
+            checkedOne (fruitId) {
+                console.log(fruitId, 99)
+                let idIndex = this.fruitIds.indexOf(fruitId)
+                if (idIndex >= 0) {
+                    this.fruitIds.splice(idIndex, 1)
+                } else {
+                    this.fruitIds.push(fruitId)
+                }
+            },
+            checkedAll (e) {
+                this.isCheckedAll = e.target.checked;
+                if (this.isCheckedAll) {//全选时
+                    this.fruitIds = []
+                    this.fruits.forEach(item => {
+                        this.fruitIds.push(item.id)
+                    })
+                } else {
+                    this.fruitIds = []
+                }
+            },
+            checkedOne2 (fruitId) {
+                console.log(fruitId)
+                let idIndex = this.listIds.indexOf(fruitId)
+                if (idIndex >= 0) {//如果已经包含就去除
+                    this.listIds.splice(idIndex, 1)
+                } else {//如果没有包含就添加
+                    this.listIds.push(fruitId)
+                }
+            },
+            checkedAll2 (e) {
+                this.isCheckedAll = e.target.checked;
+                if (this.isCheckedAll) {//全选时
+                    this.listIds = []
+                    this.list.forEach(item => {
+                        this.listIds.push(item.id)
+                    })
+                } else {
+                    this.listIds = []
+                }
+            },
+        }
+    })
+
+
+</script>
+</body>
+</html>
