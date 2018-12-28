@@ -1,0 +1,109 @@
+html, body{
+    height: 100%
+}
+.mainbody{
+    width: 100%;
+    //height: 100%;
+    height: 300px;
+    margin: 20px 0;
+    background: #f8f8f8;
+    .header, .footer{
+        clear: both;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        border: 1px solid #ccc;
+        text-align: center;
+    }
+    .content{
+        width: 100%;
+        height: ~"calc(100% - 100px)";
+        .left, .center, .right{
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            height: 100%;
+        }
+    }
+}
+
+.conFir{
+    .left{
+        float: left;
+        width: 10%;
+        background:#000fff;
+    }
+    .center{
+        float: left;
+        width: 80%;
+    }
+    .right{
+        float: right;
+        width: 10%;
+        background:#ff0fff;
+    }
+}
+.conSec{
+    position: relative;
+    margin: 0;
+    .left{
+        position: absolute;
+        left: 0;
+        background:#000fff;
+        width: 200px;
+    }
+    .center{
+        margin: 0 200px;
+    }
+    .right{
+        position: absolute;
+        right: 0;
+        width: 200px;
+        background:#ff0fff;
+    }
+}
+
+
+.conFlex{
+    display: flex;
+    flex-direction: row;
+    .left{
+        background:#000fff;
+        width: 200px;
+    }
+    .center{
+        flex: 1
+    }
+    .right{
+        width: 200px;
+        background:#ff0fff;
+    }
+}
+
+.conTable{
+    display: table;
+    .left{
+        background:#000fff;
+        width: 200px;
+        display: table-cell;
+    }
+    .center{
+        display: table-cell;
+    }
+    .right{
+        width: 200px;
+        background:#ff0fff;
+        display: table-cell;
+    }
+}
+
+.conGrid{
+    display: grid;
+    grid-template-rows: 200px;
+    grid-template-columns: 200px auto 200px;
+    .left{
+        background:#000fff;
+    }
+    .right{
+        background:#ff0fff;
+    }
+}

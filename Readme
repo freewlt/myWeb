@@ -154,6 +154,8 @@
 #表格
 ### 表格增删排序操作                         src/demo/table/table.html
 
+#div布局
+### 五种div自适应布局                        src/demo/layout/index.html
 
 #### 特效集锦    index.html
 

@@ -1,0 +1,105 @@
+html,
+body {
+  height: 100%;
+}
+.mainbody {
+  width: 100%;
+  height: 300px;
+  margin: 20px 0;
+  background: #f8f8f8;
+}
+.mainbody .header,
+.mainbody .footer {
+  clear: both;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.mainbody .content {
+  width: 100%;
+  height: calc(100% - 100px);
+}
+.mainbody .content .left,
+.mainbody .content .center,
+.mainbody .content .right {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  height: 100%;
+}
+.conFir .left {
+  float: left;
+  width: 10%;
+  background: #000fff;
+}
+.conFir .center {
+  float: left;
+  width: 80%;
+}
+.conFir .right {
+  float: right;
+  width: 10%;
+  background: #ff0fff;
+}
+.conSec {
+  position: relative;
+  margin: 0;
+}
+.conSec .left {
+  position: absolute;
+  left: 0;
+  background: #000fff;
+  width: 200px;
+}
+.conSec .center {
+  margin: 0 200px;
+}
+.conSec .right {
+  position: absolute;
+  right: 0;
+  width: 200px;
+  background: #ff0fff;
+}
+.conFlex {
+  display: flex;
+  flex-direction: row;
+}
+.conFlex .left {
+  background: #000fff;
+  width: 200px;
+}
+.conFlex .center {
+  flex: 1;
+}
+.conFlex .right {
+  width: 200px;
+  background: #ff0fff;
+}
+.conTable {
+  display: table;
+}
+.conTable .left {
+  background: #000fff;
+  width: 200px;
+  display: table-cell;
+}
+.conTable .center {
+  display: table-cell;
+}
+.conTable .right {
+  width: 200px;
+  background: #ff0fff;
+  display: table-cell;
+}
+.conGrid {
+  display: grid;
+  grid-template-rows: 200px;
+  grid-template-columns: 200px auto 200px;
+}
+.conGrid .left {
+  background: #000fff;
+}
+.conGrid .right {
+  background: #ff0fff;
+}
