@@ -157,6 +157,12 @@
 #div布局
 ### 五种div自适应布局                        src/demo/layout/index.html
 
+#表格
+### jq透明蓄水池柱状图                         src/demo/3d/index.html
+
+#div布局
+### canvas文字换行显示                       src/demo/canvas/index.html
+
 #### 特效集锦    index.html
 
 
