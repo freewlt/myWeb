@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+ div{
+   width:1000px;
+   text-align: center;
+   display: block;
+ } 
+  </style>
+  <!-- <canvas id="canvas"></canvas> -->
+  <canvas id="canvas" style="border:solid 1px darkgoldenrod;" width="500px" height="100px"></canvas>
+</head>
+<body>
+  <script>
+    var a = [
+      {id:'nekngkengllkeng',ip:'1982'},
+      {id:'我们不能呢',ip:'请问你那个缝'},
+      {id:'1548',ip:'19801010102'},
+    ]
+      
+    var c=document.getElementById("canvas"); 
+    var ctx=c.getContext("2d"); 
+    ctx.lineWidth=1; 
+    var lineWidth = 0;
+    var canvasWidth = c.width;
+    var initHeight=15;
+    a.map((item,index)=>{ 
+      var re = item.id +item.ip
+        ctx.fillText(re,0,initHeight);
+        initHeight+=20
+    })
+  </script>
+</body>
+</html>
