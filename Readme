@@ -14,6 +14,7 @@
 ### jQuery+html5响应式页面滚屏翻页           src/demo/gunDPic/rollPage/rollPage.html
 ### 移动端左右滑动                           src/demo/gunDPic/scrollAround/scrollAround.html
 ### 多种css3滚动下拉动画加载效果             src/demo/gunDPic/pullDownLoad/pullDownLoad.html
+### 仿房天下swiper滚动并js左右拖动           src/demo/gunDPic/fangFangtianxia/index.html
 
 #图片放大
 ### jQuery提供两种点击图片放大效果           src/demo/picFangDa/magnifyPic/magnifyPic.html

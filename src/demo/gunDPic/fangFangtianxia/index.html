@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="swiper.min.css">
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            position: fixed;
+            bottom: 0%;
+            left: 0;
+            width: 100%;
+            height: 30%;
+            background: red
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .swiper-pagination .swiper-pagination-bullet {
+            width: 20px;
+            height: 20px;
+            color: #fff;
+
+        }
+
+        .stage {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .content {
+            width: 800px;
+            height: 600px;
+            margin: 0 auto;
+        }
+
+        .content img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .roles, .roleOne {
+            width: 60px;
+            height: 60px;
+            position: fixed;
+            left: 30px;
+            bottom: 30px;
+        }
+
+        .roleOne img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .stage .swiper-pagination-bullets {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 20%;
+        }
+
+        .stage .swiper-pagination .swiper-pagination-bullet:first-child {
+            position: absolute;
+            top: 32%;
+            left: 35%;
+        }
+
+        .stage .swiper-pagination .swiper-pagination-bullet:nth-child(2) {
+            position: absolute;
+            top: 38%;
+            left: 40%;
+        }
+    </style>
+</head>
+<body>
+<div class="stage">
+    <div class="content">
+        <img src="0x692c4_50_1.jpg" alt="">
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+<!-- Swiper -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+        <div class="swiper-slide">Slide 10</div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination">
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+
+<!-- Swiper JS -->
+<script src="swiper.min.js"></script>
+<script>
+
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 30,
+        uniqueNavElements: false,
+        paginationBulletRender: function (swiper, index, className) {
+            return '<span class="' + className + '">' + (index + 1) + '</span>';
+        }
+    });
+    var swiper = new Swiper('.module02 .swiper-container', {
+        slidesPerView: 5,
+        paginationClickable: true,
+        spaceBetween: 0,
+        freeMode: true
+    });
+
+    var stage = document.querySelector(".stage");
+    stage.style.height = document.body.clientHeight; //获取视图的高度
+
+    var content = document.querySelector(".content");
+    var contentWidth = 800;
+    var contentHeight = 600;
+    var contentWidthEdge = contentWidth - document.documentElement.clientWidth;
+    var contentHeightEdge = contentHeight - document.documentElement.clientHeight;
+
+    var start = {x: 0, y: 0}; //滑动的起始坐标
+    var end = {x: 0, y: 0}; //滑动停止坐标
+    var offset = {x: 0, y: 0}; //偏移
+    var marginLeft = "0px";
+    var marginTop = "0px";
+
+    function startAction(event) {
+        start.x = event.touches[0].clientX;
+        start.y = event.touches[0].clientY;
+    }
+
+    function move(event) {
+
+        end.x = event.touches[0].clientX;
+        end.y = event.touches[0].clientY;
+        offset.x = end.x - start.x;
+        offset.y = end.y - start.y;
+        start.x = end.x;
+        start.y = end.y;
+        marginLeft = isNaN(parseInt(content.style.marginLeft)) ? 0 : parseInt(content.style.marginLeft);
+        marginLeft = marginLeft + offset.x;
+        if (marginLeft > 0 || marginLeft <= -contentWidthEdge) {
+        } else {
+            content.style.marginLeft = marginLeft + "px";
+        }
+
+        marginTop = isNaN(parseInt(content.style.marginTop)) ? 0 : parseInt(content.style.marginTop);
+        marginTop = marginTop + offset.y;
+        if (marginTop > 0 || marginTop <= -contentHeightEdge) {
+
+        } else {
+            content.style.marginTop = marginTop + "px";
+        }
+    }
+
+    window.onload = function () {
+        var stage = document.querySelector(".stage");
+        document.addEventListener("touchstart", startAction);
+        document.addEventListener("touchmove", move);
+        document.addEventListener("touchend", function () {
+            console.log("滑动结束！");
+        });
+    }
+
+</script>
+</body>
+</html>
