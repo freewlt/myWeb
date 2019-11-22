@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<h3><a href="https://github.com/yeild/jigsaw">返回GitHub</a></h3>
+<div class="container">
+    <input value="admin" readonly/>
+    <input type="password" value="1234567890" readonly/>
+    <div id="captcha"></div>
+    <div id="msg"></div>
+</div>
+<script>
+    //在页面上使用
+    jigsaw.init({
+        el: document.getElementById('captcha'),
+        onSuccess: function() {
+            document.getElementById('msg').innerHTML = '登录成功！'
+        },
+        onFail: cleanMsg,
+        onRefresh: cleanMsg
+    })
+    function cleanMsg() {
+        document.getElementById('msg').innerHTML = ''
+    }
+</script>
+</body>
+</html>

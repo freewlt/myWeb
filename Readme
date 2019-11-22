@@ -165,6 +165,9 @@
 #div布局
 ### canvas文字换行显示                       src/demo/canvas/index.html
 
+#验证码
+### 滑动拼图验证码                           src/demo/pinTuCode/index.html
+
 #### 特效集锦    index.html
 
 
