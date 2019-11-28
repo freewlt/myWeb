@@ -101,6 +101,7 @@
 #echarts
 ### Echarts                                  src/demo/Echarts/echarts.html
 ### canvas地图迁徙图                         src/demo/echarts-migration-master/index.html
+### echart圆环进度条                         src/demo/Echarts/echartPie/index.html
 
 #粒子特效
 ### 粒子特效（带水波纹的）                   src/demo/particles/particles.html
