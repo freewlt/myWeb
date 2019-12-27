@@ -51,10 +51,14 @@
 ### 美化复选按钮                              src/demo/selectBeat/checkbox.html
 ### 重置select                                src/demo/selectBeat/resetSelect.html
 
+#地区选择
+### pc端地区选择插件                          src/demo/area/index.html
+### 手机端省市区三级联动                      src/demo/area/city/index.html
+### LArea手机端地区选择插件                   src/demo/area/LareaMaster/LareaMaster.html
+
 #日期联动
 ### 年月日选择 date                           src/demo/date/datePicker/date.html
 ### FullCalendar应用                          src/demo/date/fullCalendar/cal_opt.html
-### LArea手机端地区选择插件                   src/demo/date/LareaMaster/LareaMaster.html
 ### LCalendar日期选择                         src/demo/date/LCalendar/LCalendar.html
 ### mobileScroll日期时间插件                  src/demo/date/LCalendar/LCalendar.html
 ### html5选择查看当地城市天气预报             src/demo/date/weather/index.html
