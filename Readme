@@ -15,6 +15,7 @@
 ### 移动端左右滑动                           src/demo/gunDPic/scrollAround/scrollAround.html
 ### 多种css3滚动下拉动画加载效果             src/demo/gunDPic/pullDownLoad/pullDownLoad.html
 ### 仿房天下swiper滚动并js左右拖动           src/demo/gunDPic/fangFangtianxia/index.html
+### bootstrap图片滚动                        src/demo/gunDPic/carousel-tree/index.html
 
 #图片放大
 ### jQuery提供两种点击图片放大效果           src/demo/picFangDa/magnifyPic/magnifyPic.html
@@ -35,6 +36,7 @@
 ### 文字无缝滚动效果代码（jQuery）            src/demo/gunDCharacter/marquee/marquee.html
 ### 文字水平滚动                              src/demo/gunDCharacter/levelMarquee.html
 ### js标签云球形滚动特效代码                  src/demo/gunDCharacter/CloudBallRolling/CloudBallRolling.html
+### js类似抽奖的数字滚动                      src/demo/digitalRoll/index.html
 
 #鼠标悬停
 ### 鼠标移动到图片悬停时，图片变色滤镜效果   src/demo/mouseOver/opacity.html
@@ -69,6 +71,7 @@
 ### 弹窗并居中自己的                          src/demo/align/align.html
 ###多种轻量级框架                             src/demo/align/alignType/alignType.html
 ###轻量级jQuery对话框插件 jQuery.dialog.js    src/demo/align/alignDialog/index.html
+###jqAlert封装弹窗                            src/demo/dialogBox/jqAlert/index.html
 
 #选项卡切换
 ### 选项卡切换                                src/demo/tabSwitch/picCut/picCut.html

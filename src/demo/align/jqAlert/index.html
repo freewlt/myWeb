@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>jqueryyanzhen</title>
+    </head>
+    <style>
+        .TotalButton {
+            display: flex;
+            height: 200px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .OneButton {
+            margin-right: 50px;
+        }
+
+        .OneButton, .TwoButton {
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            padding: 0 30px;
+            background-color: #fd7171;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+    <body>
+        <div class="TotalButton">
+            <div class="OneButton">只有确定按钮</div>
+            <div class="TwoButton">确定和取消按钮</div>
+        </div>
+
+        <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+        <script src="jAlert.js"></script>
+        <script>
+            var log = console.log.bind(console);
+            $(function () {
+                /* 注解
+                 * jAlert 和 jConfirm 总共支持四个参数, 第一个参数为弹出窗的头部区域
+                  * 第二个参数为 要提示的消息
+                  * 第三个参数 和 第四个参数可不传, 第三个参数如果不传默认的显示按钮内容为确定, 若传极为传递参数
+                  * 第四个参数为点击按钮后执行的回调函数*/
+                
+                $(".OneButton").click(function () {
+                    jAlert('提示', '你确定要关闭该弹窗么？', '确定')
+                });
+
+                $(".TwoButton").click(function () {
+                    jConfirm('重要提示', '该操作不可恢复, 是否继续该操作？', '确定', function (e) {
+                        log('操作成功！')
+                    })
+                });
+            })
+        </script>
+    </body>
+</html>
